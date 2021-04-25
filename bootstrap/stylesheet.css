@@ -60,7 +60,8 @@ header {
 }
 
 .login-button:hover {
-    color: #DEA85E;
+    color: white;
+    background-color: #fd9502;
 }
 
 .sign-up-button {
@@ -113,7 +114,6 @@ header {
 .newProducts {
     position: relative;
     text-align: center;
-    margin-bottom: 2px;
 }
 
 .newProducts::after {
@@ -129,7 +129,7 @@ header {
 
 .productsContainer {
     display: flex;
-    padding: 30px 30px;
+    padding: 30px 50px;
     justify-content: space-evenly;
 }
 
@@ -173,6 +173,114 @@ header {
     margin-right: -12px ;
     margin-top: -5px;
 }
+
+.addToCart:hover {
+    background-color: #fd9502;
+    color: white;
+}
+
+.youAreSeller {
+    text-align: center;
+    position: relative;
+}
+
+.youAreSeller::after {
+    content: "";
+    width: 108px;
+    height: 2px;
+    background-color: #DEA85E;
+    position: absolute;
+    left:calc(46%);
+    bottom: 0;  
+    transform: translateY(4px);
+}
+
+.sellerConatiner {
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    display: flex;
+    padding: 15px 15px;
+    margin: 25px 92px; 
+}
+
+.sellerImage {
+    height: 400px;
+}
+
+.sellerDescription {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 45px;
+    margin: 20px 104px;
+}
+
+.getStarted {
+    background-color: #DEA85E;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 22px;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+.getStarted:hover {
+    background-color: #fd9502;
+} 
+
+footer {
+    display: flex;
+    background-color: #F8F8F8;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    padding: 15px 0px;
+}
+
+.ensiasLogo {
+    height: 70px;
+    margin-top: 30px;
+}
+
+.footerLogo {
+    height: 45px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.callIcon, .emailIcon {
+    height: 20px;
+}
+
+.brandNumber, .brandEmail {
+    font-size: 14px;
+}
+
+.verticalLine {
+    width: 8px;
+    border-left: 1px solid #777575;
+    height: 100px;
+    margin-top: 18px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #DEA85E; 
+    border-radius: 5px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #fd9502; 
+}
+
+
+
 
 
 
