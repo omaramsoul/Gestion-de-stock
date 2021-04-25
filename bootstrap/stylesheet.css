@@ -76,6 +76,11 @@ header {
     margin-top: -10px;
 }
 
+.cartIcon {
+    height: 25px;
+    margin-right: 10px;
+}
+
 .landingContainer {
     display: flex;
     justify-content: space-evenly;
