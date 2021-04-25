@@ -1,0 +1,178 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 17px ;
+    font-family: 'Cairo', sans-serif;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 20px 100px;
+    text-decoration: none;
+}
+
+.mynavbar-items {
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+}
+
+.mynavbar-items li a{
+    text-decoration-line: none;
+    padding: 0px 10px;   
+    color: black; 
+    display: inline-block;
+}
+
+.mynavbar-items li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width .3s;
+    background: #DEA85E;
+}
+
+.mynavbar-items li a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.registration {
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+}
+
+.login-button {
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 15px; 
+}
+
+.login-button:hover {
+    color: #DEA85E;
+}
+
+.sign-up-button {
+    margin-top: 3px;
+    border: none;
+    background: none;
+    padding-right: 10px;
+}
+
+.logo-image {
+    height: 40px;
+    margin-top: -10px;
+}
+
+.landingContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -30px;
+    margin-left: 70px;
+    padding: 0px 5px 0px 5px;
+}
+
+.firstImage {
+    height: 540px;
+    margin-right: 80px;
+}
+
+.discoverProducts {
+    background-color: #DEA85E;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 22px;
+    margin-left: 180px;
+    margin-top: 60px;
+}
+
+.discoverProducts:hover {
+    background-color: #fd9502;
+} 
+
+.firstSlogan {
+    font-family: 'Limelight', cursive;
+    font-size: 50px;
+    margin-left: 70px;
+}
+
+.newProducts {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.newProducts::after {
+    content: "";
+    height: 2px;
+    width: 108px;
+    background: #DEA85E;
+    position: absolute;
+    left:calc(46%);
+    bottom: 0;  
+    transform: translateY(4px);
+}
+
+.productsContainer {
+    display: flex;
+    padding: 30px 30px;
+    justify-content: space-evenly;
+}
+
+.productCard {
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    margin: 0px 10px;
+    width: 20%;
+}
+
+.productImage {
+    background-color: #f8e7ce;
+    margin: 10px;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.productName {
+    text-align: center;
+}
+
+.productDescription {
+    font-size: 14px;
+    margin: 0px 15px;
+    text-align: center;
+}
+
+.priceContainer {
+    display: flex;
+    margin: 18px 10px 8px 10px;
+    justify-content: space-evenly;
+}
+
+.addToCart {
+    background-color: #FFE4BF;
+    border: none;
+    border-radius: 10px;
+    color: #A32424;
+    font-size: 14px;
+    padding: 4px 10px;
+    margin-right: -12px ;
+    margin-top: -5px;
+}
+
+
+
