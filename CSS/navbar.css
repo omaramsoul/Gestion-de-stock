@@ -1,0 +1,76 @@
+body {
+    font-size: 17px !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+
+.mr-auto {
+    margin-left: auto;
+}
+
+.btn-outline-success {
+    border: none;
+    color: white;
+    background-color: black !important;
+}
+
+.btn-outline-success:hover {
+    background-color: #fd9502 !important;
+}
+
+.signup {
+    color: black !important;
+    margin-right: 10px;
+    text-decoration: none !important;
+    text-decoration-line: none !important;
+}
+
+.cartIcon {
+    height: 25px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    padding: 0px 10px !important;   
+    color: black !important;
+}
+
+.nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width .3s;
+    background: #DEA85E;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.logo {
+    height: 45px;
+}
+
+.registration {
+    display: none;
+}
+
+.navbar-toggler {
+    color: #DEA85E !important;
+    border-color: #DEA85E !important;
+}
+
+.navbar {
+    margin: 0px 30px;
+}
+
+@media (max-width: 991px) {
+    .registration {
+        display: block;
+    }
+
+    .signup, .cartIcon, .login {
+        display: none;
+    }
+}

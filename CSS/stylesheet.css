@@ -7,80 +7,11 @@
 body{
     font-size: 17px ;
     font-family: 'Cairo', sans-serif;
-    
 }
 
-header {
+.imageContainer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding : 20px 100px;
-    text-decoration: none;
-}
-
-.mynavbar-items {
-    list-style: none;
-    display: flex;
-    margin-top: 10px;
-}
-
-.mynavbar-items li a{
-    text-decoration-line: none;
-    padding: 0px 10px;   
-    color: black; 
-    display: inline-block;
-}
-
-.mynavbar-items li a::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    transition: width .3s;
-    background: #DEA85E;
-}
-
-.mynavbar-items li a:hover::after {
-    width: 100%;
-    transition: width .3s;
-}
-
-.registration {
-    list-style: none;
-    display: flex;
-    margin-top: 10px;
-    justify-content: center;
-}
-
-.login-button {
-    color: white;
-    background-color: black;
-    border: none;
-    border-radius: 5px;
-    padding: 3px 15px; 
-}
-
-.login-button:hover {
-    color: white;
-    background-color: #fd9502;
-}
-
-.sign-up-button {
-    margin-top: 3px;
-    border: none;
-    background: none;
-    padding-right: 10px;
-    white-space: nowrap;
-}
-
-.logo-image {
-    height: 40px;
-    margin-top: -10px;
-}
-
-.cartIcon {
-    height: 25px;
-    margin-right: 10px;
+    justify-content: flex-start;
 }
 
 .landingContainer {
@@ -269,32 +200,6 @@ footer {
     background: #fd9502; 
 }
 
-/*@media (min-width: 768px) {
-    * {
-        padding: 0px;
-        margin: 0px;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: 'Cairo', sans-serif;
-    }
-
-    header {
-        display: flex;
-        align-items: center;
-        padding : 20px 100px;
-        text-decoration: none;
-    }
-
-    .productsContainer {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 30px 50px;
-        
-        margin:auto;
-    }
-}*/
 
 
 

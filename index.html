@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap/stylesheet.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/stylesheet.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,22 +18,31 @@
 </head>
 <body>
 
-    <!-- Logo & navbar items within the header -->
+    <!-- Header nicely done -->
     <header>
-        <img src="images/logo.png" alt="" class="logo-image">
-        <nav class="mynavbar">
-                <ul class="mynavbar-items">
-                    <li class="itemslist"><a href="index.html">Home</a></li>
-                    <li class="itemslist"><a href="#">Products</a></li>
-                    <li class="itemslist"><a href="#">Sell</a></li>
-                </ul>
-        </nav>
-        <ul class="registration">
-            <li><a href="#"><img src="images/cart.png" class="cartIcon"></a></li>
-            <li><button class="sign-up-button">Sign up</button></li>
-            <li><button class="login-button">Login</button></li>
-        </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sell</a></li>
+                <li class="nav-item"><a class="nav-link registration" href="#">Login</a></li>
+                <li class="nav-item"><a class="nav-link registration" href="#">Sign up</a></li>         
+              </ul>
+              <div class="form-inline my-2 my-lg-0">
+                <a href="#"><img src="images/cart.png" class="cartIcon"></a>
+                <a href="#" class="signup">Sign up</a>
+                <button class="btn btn-outline-success my-2 my-sm-0 login" type="submit">Login</button>
+              </div>
+            </div>
+          </nav>
     </header>
+    <!------------------------>
     
 
     <main>
@@ -47,10 +57,10 @@
 -->
 
         <!-- Titles nicely done -->
-        <br/>
+        <!--<br/>
         <h4 class="newProducts">New products</h4>
         <div class="horizontalLine"></div>
-        <br/>
+        <br/> -->
         <!------------------------>
 
 
@@ -115,15 +125,15 @@
                 </div>
 
             </div>
-        </div>
+        </div> 
         <!---------------------------------------->
         
         <!-- Titles nicely done -->
-        <br/>
+        <!--<br/>
         <h4 class="youAreSeller">You are a seller ?</h4>
         <div class="horizontalLine"></div>
-        <br/>
-        <!------------------------>
+        <br/> -->
+        <!------------------------> 
 
 <!--
         <div class="sellerConatiner">
@@ -152,7 +162,7 @@
         <img src="images/ensiasLogo.png" alt="" class="ensiasLogo">
     </footer>
 
-
+-->
     <script src="bootstrap/jquery-3.6.0.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
     <script src="bootstrap/script.js"></script>
