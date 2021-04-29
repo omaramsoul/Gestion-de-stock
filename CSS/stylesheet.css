@@ -9,46 +9,6 @@ body{
     font-family: 'Cairo', sans-serif;
 }
 
-.imageContainer {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.landingContainer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: -30px;
-    margin-left: 70px;
-    padding: 0px 5px 0px 5px;
-}
-
-.firstImage {
-    height: 540px;
-    margin-right: 80px;
-}
-
-.discoverProducts {
-    background-color: #DEA85E;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 22px;
-    margin-left: 180px;
-    margin-top: 60px;
-}
-
-.discoverProducts:hover {
-    background-color: #fd9502;
-} 
-
-.firstSlogan {
-    font-family: 'Limelight', cursive;
-    font-size: 50px;
-    margin-left: 70px;
-}
-
 .newProducts {
     position: relative;
     text-align: center;

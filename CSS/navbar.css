@@ -8,13 +8,18 @@ body {
 }
 
 .btn-outline-success {
-    border: none;
+    border: none !important;
     color: white;
     background-color: black !important;
 }
 
+.btn-outline-success:focus {
+    box-shadow: none !important;
+}
+
 .btn-outline-success:hover {
     background-color: #fd9502 !important;
+    border: none;
 }
 
 .signup {
