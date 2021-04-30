@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CSS/stylesheet.css">
     <link rel="stylesheet" href="CSS/landingContainer.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="CSS/sellerContainer.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
@@ -70,7 +71,7 @@
 
 
         <!-- The container products nicely done -->
-        <div class="container">
+        <div class="container productContainer">
             <div class="row">
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-7 p-0">
@@ -140,12 +141,16 @@
         <br/>
         <!------------------------> 
 
-<!--
-        <div class="sellerConatiner">
-            <img src="images/sellerImage.png" alt="" class="sellerImage">
-            <div class="sellerText">
-                <p class="sellerDescription">Sell your products<br/>and manage your<br/>stock even while<br/>you are away.</p>
-                <button class="getStarted">Get started</button>
+
+        <div class="sellerContainer container">
+            <div class="row theContainer col-lg-12 col-md-12 col-sm-12">
+                <div class="imageContainer2 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <img src="images/sellerImage.png" class="sellerImage">
+                </div>
+                <div class="sellerText col-lg-6 col-md-6 col-sm-6 col-12">
+                    <p class="sellerDescription">Sell your products<br/>and manage your<br/>stock even while<br/>you are away.</p>
+                    <button class="getStarted">Get started</button>
+                </div>
             </div>
         </div>
 
@@ -153,21 +158,23 @@
 
     <footer>
         <div class="ContactUs">
-            <img src="images/footerLogo.png" alt="" class="footerLogo">
+            <img src="images/logo.png" alt="" class="footerLogo">
             <div class="brandInfos">
-                <section>
-                    <p class="brandNumber"><img src="images/call.png" alt="" class="callIcon"> +212-623689100</p>
-                </section>
-                <section>
-                    <p class="brandEmail"><img src="images/email.png" alt="" class="emailIcon"> contact@stockin.com</p>
-                </section>
+                <div class="brandIcons">
+                    <img src="images/call.png" class="callIcon"><br/>
+                    <img src="images/email.png" class="emailIcon">
+                </div>
+                <div class="brandData">
+                    <p class="brandNumber"> +212-623689100</p>
+                    <p class="brandEmail">  contact@stockin.com</p>
+                </div>
             </div>
         </div>
         <div class="verticalLine"></div>
         <img src="images/ensiasLogo.png" alt="" class="ensiasLogo">
     </footer>
 
--->
+
     <script src="bootstrap/jquery-3.6.0.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
     <script src="bootstrap/script.js"></script>

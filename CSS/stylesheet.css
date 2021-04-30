@@ -9,6 +9,11 @@ body{
     font-family: 'Cairo', sans-serif;
 }
 
+.productContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .newProducts {
     position: relative;
     text-align: center;
@@ -76,38 +81,6 @@ body{
     position: relative;
 }
 
-.sellerConatiner {
-    background-color: #F8F8F8;
-    border-radius: 10px;
-    display: flex;
-    padding: 15px 15px;
-    margin: 25px 92px; 
-}
-
-.sellerImage {
-    height: 400px;
-}
-
-.sellerDescription {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 45px;
-    margin: 20px 104px;
-}
-
-.getStarted {
-    background-color: #DEA85E;
-    padding: 10px 50px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 22px;
-    margin-left: 200px;
-    margin-top: 30px;
-}
-
-.getStarted:hover {
-    background-color: #fd9502;
-} 
 
 footer {
     display: flex;
@@ -117,19 +90,42 @@ footer {
     padding: 15px 0px;
 }
 
+.brandInfos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brandIcons {
+    display: block;
+    text-align: center;
+}
+
+.brandData {
+    display: block;
+    text-align: center;
+}
+
 .ensiasLogo {
     height: 70px;
     margin-top: 30px;
 }
 
 .footerLogo {
-    height: 45px;
-    margin-left: 20px;
+    height: 40px;
+    margin-left: auto;
     margin-bottom: 10px;
 }
 
 .callIcon, .emailIcon {
     height: 20px;
+}
+
+.callIcon {
+    margin-top: -5px;
+}
+
+.emailIcon {
+    margin-top: 12px;
 }
 
 .brandNumber, .brandEmail {
