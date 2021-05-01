@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/signup.css">
-    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/signup.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -14,7 +15,7 @@
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo"></a>
+            <a class="navbar-brand" href="#"><img src="/images/logo.png" class="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,7 +29,7 @@
                 <li class="nav-item"><a class="nav-link registration" href="signup.html">Sign up</a></li>         
               </ul>
               <div class="form-inline my-2 my-lg-0">
-                <a href="#"><img src="images/cart.png" class="cartIcon"></a>
+                <a href="#"><img src="/images/cart.png" class="cartIcon"></a>
                 <a href="signup.html" class="signup">Sign up</a>
                 <button class="btn btn-outline-success my-2 my-sm-0 login" type="submit" onclick="location.href='login.html'">Login</button>
               </div>
@@ -40,7 +41,7 @@
     <main>
         <div class="signupTemplate container">
             <form action="index.html" class="signUpForm">
-                <img src="images/logo.png" class="loginLogo">
+                <img src="/images/logo.png" class="loginLogo">
                 <section class="signText">Create your account </section>
                 <input type="text" name="name" id="" placeholder="Fisrt name*" class="inputNameArea" required>
                 <input type="text" placeholder="Family name*" class="inputNameArea" required><br/>
@@ -63,10 +64,28 @@
         </div>
     </main>
     
+    <footer>
+      <div class="ContactUs">
+          <img src="/images/logo.png" alt="" class="footerLogo">
+          <div class="brandInfos">
+              <div class="brandIcons">
+                  <img src="/images/call.png" class="callIcon"><br/>
+                  <img src="/images/email.png" class="emailIcon">
+              </div>
+              <div class="brandData">
+                  <p class="brandNumber"> +212-623689100</p>
+                  <p class="brandEmail">  contact@stockin.com</p>
+              </div>
+          </div>
+      </div>
+      <div class="verticalLine"></div>
+      <img src="/images/ensiasLogo.png" alt="" class="ensiasLogo">
+  </footer>
 
-    <script src="bootstrap/jquery-3.6.0.min.js"></script>
-    <script src="bootstrap/bootstrap.min.js"></script>
-    <script src="bootstrap/script.js"></script>
+
+    <script src="/bootstrap/jquery-3.6.0.min.js"></script>
+    <script src="/bootstrap/bootstrap.min.js"></script>
+    <script src="/bootstrap/script.js"></script>
 
 </body>
 </html>
