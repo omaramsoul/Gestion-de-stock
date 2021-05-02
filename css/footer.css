@@ -54,3 +54,24 @@ footer {
     height: 100px;
     margin-top: 18px;
 }
+
+@media (max-width: 500px) {
+
+    .ensiasLogo {
+        height: 45px;
+    }
+
+    .verticalLine {
+        height: 80px;
+    }
+
+    .footerLogo {
+        height: 30px;
+        margin-left: auto;
+        margin-bottom: 10px;
+    }
+    
+    footer {
+        padding: 10px;
+    }
+}

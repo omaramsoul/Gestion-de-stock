@@ -104,3 +104,16 @@ select {
         width: 270px;    
     }
 }
+
+@media (max-width: 500px) {
+
+    .signupTemplate  {
+        width: 85%;
+        margin-top: 20px;
+    }
+
+    .inputArea, .signupbtn, .inputNameArea {
+        width: 220px;    
+    }
+    
+}

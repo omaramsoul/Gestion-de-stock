@@ -99,6 +99,28 @@ body{
 }
 
 
+@media (max-width: 500px) {
+
+    .productContainer {
+        width: 100%;
+    }
+
+    .product {
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .addToCart, .productPrice {
+        white-space: nowrap;
+    }
+
+    .youAreSeller {
+        margin-top: -18px;
+    }
+}
+
 
 
 
