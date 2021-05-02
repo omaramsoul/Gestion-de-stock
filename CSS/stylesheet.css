@@ -81,64 +81,6 @@ body{
     position: relative;
 }
 
-
-footer {
-    display: flex;
-    background-color: #F8F8F8;
-    justify-content: space-evenly;
-    margin-top: 40px;
-    padding: 15px 0px;
-}
-
-.brandInfos {
-    display: flex;
-    justify-content: space-between;
-}
-
-.brandIcons {
-    display: block;
-    text-align: center;
-}
-
-.brandData {
-    display: block;
-    text-align: center;
-}
-
-.ensiasLogo {
-    height: 70px;
-    margin-top: 30px;
-}
-
-.footerLogo {
-    height: 40px;
-    margin-left: auto;
-    margin-bottom: 10px;
-}
-
-.callIcon, .emailIcon {
-    height: 20px;
-}
-
-.callIcon {
-    margin-top: -5px;
-}
-
-.emailIcon {
-    margin-top: 12px;
-}
-
-.brandNumber, .brandEmail {
-    font-size: 14px;
-}
-
-.verticalLine {
-    width: 8px;
-    border-left: 1px solid #777575;
-    height: 100px;
-    margin-top: 18px;
-}
-
 ::-webkit-scrollbar {
     width: 8px;
 }
