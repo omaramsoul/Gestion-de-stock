@@ -116,15 +116,11 @@ body {
 @media (max-width: 500px) {
 
     .loginTemplate {
-        width: 75%;
+        width: 80%;
     }
 
-    .textArea, .passwordArea {
-        width: 220px;    
-    }
-
-    .sbmitBtn {
-        width: 220px;
+    .textArea, .passwordArea, .sbmitBtn {
+        width: 250px;    
     }
     
 }
