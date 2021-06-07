@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -29,10 +31,9 @@
                       Products
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Smartphone</a>
-                      <a class="dropdown-item" href="#">Laptop</a>
-                      <a class="dropdown-item" href="#">Television</a>                
-                      <a class="dropdown-item" href="#">Accessoiries</a>
+                      <a class="dropdown-item" onclick="GoToInforamtique()">Informatique et Multimedia</a>
+                      <a class="dropdown-item" onclick="GoToHabillement()">Habillement et Bien Etre</a>
+                      <a class="dropdown-item" onclick="GoToMaison()">Maison et Jardin</a>
                     </div>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="#">Sell</a></li>
@@ -51,10 +52,191 @@
     <main>
         <div class="container productsDiv col-md-12">
             <br/>
-            <h4 class="newProducts">New products</h4>
+            <h4 id="nProducts" class="newProducts"></h4>
             <div class="horizontalLine"></div>
             <br/> 
         </div>
+
+        <div class="container productContainer">
+          <div class="row">
+
+              <div class="col-lg-3 col-md-6 col-sm-6 col-8 p-0">
+                  <div class="product">
+
+                      <div class="productImage"><a href="productPage.html"><img src="" alt=""></a></div>
+                      <h5 class="productName">Product name</h5>
+                      <section class="productDescription"><p>Lorem Ipsum is simply dummy <br/>text of the printing</p></section>
+                      <div class="priceContainer">
+                          <h5 class="productPrice"><b>100 Dhs</b></h5>
+                          <button class="addToCart">ADD TO CART</button>
+                      </div>
+
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-6 col-8 p-0">
+                  <div class="product">
+
+                      <div class="productImage"><a href="productPage.html"></a></div>
+                      <h5 class="productName">Product name</h5>
+                      <section class="productDescription"><p>Lorem Ipsum is simply dummy <br/>text of the printing</p></section>
+                      <div class="priceContainer">
+                          <h5 class="productPrice"><b>100 Dhs</b></h5>
+                          <button class="addToCart">ADD TO CART</button>
+                      </div>
+
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-6 col-8 p-0">
+                  <div class="product">
+
+                      <div class="productImage"><a href="productPage.html"><img src="" alt=""></a></div>
+                      <h5 class="productName">Product name</h5>
+                      <section class="productDescription"><p>Lorem Ipsum is simply dummy <br/>text of the printing</p></section>
+                      <div class="priceContainer">
+                          <h5 class="productPrice"><b>100 Dhs</b></h5>
+                          <button class="addToCart">ADD TO CART</button>
+                      </div>
+
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-6 col-8 p-0">
+                  <div class="product">
+
+                      <div class="productImage"><a href="productPage.html"><img src="" alt=""></a></div>
+                      <h5 class="productName">Product name</h5>
+                      <section class="productDescription"><p>Lorem Ipsum is simply dummy <br/>text of the printing</p></section>
+                      <div class="priceContainer">
+                          <h5 class="productPrice"><b>100 Dhs</b></h5>
+                          <button class="addToCart">ADD TO CART</button>
+                      </div>
+
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-6 col-8 p-0">
+                <div class="product">
+
+                    <div class="productImage"><a href="productPage.html"><img src="" alt=""></a></div>
+                    <h5 class="productName">Product name</h5>
+                    <section class="productDescription"><p>Lorem Ipsum is simply dummy <br/>text of the printing</p></section>
+                    <div class="priceContainer">
+                        <h5 class="productPrice"><b>100 Dhs</b></h5>
+                        <button class="addToCart">ADD TO CART</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-8 p-0">
+                <div class="product">
+
+                    <div class="productImage"><a href="productPage.html"><img src="" alt=""></a></div>
+                    <h5 class="productName">Product name</h5>
+                    <section class="productDescription"><p>Lorem Ipsum is simply dummy <br/>text of the printing</p></section>
+                    <div class="priceContainer">
+                        <h5 class="productPrice"><b>100 Dhs</b></h5>
+                        <button class="addToCart">ADD TO CART</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-8 p-0">
+                <div class="product">
+
+                    <div class="productImage"><a href="productPage.html"><img src="" alt=""></a></div>
+                    <h5 class="productName">Product name</h5>
+                    <section class="productDescription"><p>Lorem Ipsum is simply dummy <br/>text of the printing</p></section>
+                    <div class="priceContainer">
+                        <h5 class="productPrice"><b>100 Dhs</b></h5>
+                        <button class="addToCart">ADD TO CART</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-8 p-0">
+                <div class="product">
+
+                    <div class="productImage"><a href="productPage.html"><img src="" alt=""></a></div>
+                    <h5 class="productName">Product name</h5>
+                    <section class="productDescription"><p>Lorem Ipsum is simply dummy <br/>text of the printing</p></section>
+                    <div class="priceContainer">
+                        <h5 class="productPrice"><b>100 Dhs</b></h5>
+                        <button class="addToCart">ADD TO CART</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-8 p-0">
+              <div class="product">
+
+                  <div class="productImage"><a href="productPage.html"><img src="" alt=""></a></div>
+                  <h5 class="productName">Product name</h5>
+                  <section class="productDescription"><p>Lorem Ipsum is simply dummy <br/>text of the printing</p></section>
+                  <div class="priceContainer">
+                      <h5 class="productPrice"><b>100 Dhs</b></h5>
+                      <button class="addToCart">ADD TO CART</button>
+                  </div>
+
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6 col-8 p-0">
+              <div class="product">
+
+                  <div class="productImage"><a href="productPage.html"><img src="" alt=""></a></div>
+                  <h5 class="productName">Product name</h5>
+                  <section class="productDescription"><p>Lorem Ipsum is simply dummy <br/>text of the printing</p></section>
+                  <div class="priceContainer">
+                      <h5 class="productPrice"><b>100 Dhs</b></h5>
+                      <button class="addToCart">ADD TO CART</button>
+                  </div>
+
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6 col-8 p-0">
+              <div class="product">
+
+                  <div class="productImage"><a href="productPage.html"><img src="" alt=""></a></div>
+                  <h5 class="productName">Product name</h5>
+                  <section class="productDescription"><p>Lorem Ipsum is simply dummy <br/>text of the printing</p></section>
+                  <div class="priceContainer">
+                      <h5 class="productPrice"><b>100 Dhs</b></h5>
+                      <button class="addToCart">ADD TO CART</button>
+                  </div>
+
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6 col-8 p-0">
+              <div class="product">
+
+                  <div class="productImage"><a href="productPage.html"><img src="" alt=""></a></div>
+                  <h5 class="productName">Product name</h5>
+                  <section class="productDescription"><p>Lorem Ipsum is simply dummy <br/>text of the printing</p></section>
+                  <div class="priceContainer">
+                      <h5 class="productPrice"><b>100 Dhs</b></h5>
+                      <button class="addToCart">ADD TO CART</button>
+                  </div>
+
+              </div>
+          </div>
+
+          </div>
+      </div> 
+
+      <div class="controlesDiv container">
+        <ul class="controles">
+          <li><a href="products.html"></a></li>
+          <li><a href="products.html" class="rightPage"></a></li>
+        </ul>
+      </div>
     </main>
 
     <footer>
@@ -80,6 +262,7 @@
     <script src="bootstrap/jquery-3.6.0.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
     <script src="bootstrap/script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>

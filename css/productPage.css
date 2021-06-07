@@ -1,0 +1,32 @@
+body {
+    font-size: 17px !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+
+.productCard {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.productImageCard {
+    height: 400px;
+    width: 400px;
+    background-color: #f8e7ce;
+    border-radius: 10px;
+}
+
+.descriptionProduct {
+    height: 400px;
+    width: 400px;
+    display: block;
+    text-align: center;
+}
+
+.Add {
+    width: 200px;
+    border-radius: 5px;
+    padding: 5px 20px;
+    background-color: black;
+    color: white;
+    border-style: none;
+}
