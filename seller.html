@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/seller.css">
     <link rel="icon" href="images/favicon.png">
     <link rel="icon" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Document</title>
 </head>
 <body>
@@ -51,37 +53,68 @@
 
     <main>
         
-        <div class="container productCard">
-            <div class="productImageCard">
-              <div class="officialImage"><a href="#"><img src="" alt=""></a></div>
-              <div class="otherImages">
-                <div class="proImage"><a class="proImage" href="#"><img src="" alt=""></a></div>
-                <div class="proImage"><a class="proImage" href="#"><img src="" alt=""></a></div>
-                <div class="proImage"><a class="proImage" href="#"><img src="" alt=""></a></div>
-              </div>
-            </div> 
-            <div class="descriptionProduct">
-              <div class="firstDiv">
-                <div class="productTitle"><h3>Product name</h3></div>
-                <div class="descriptionPro">
-                  Lorem Ipsum is simply dummy text of the printing
-                  Lorem Ipsum is simply dummy text of the printing 
-                  Lorem Ipsum is simply dummy text of the printing 
+        <div class="container-flow theContainer">
+            <div class="navigation col-lg-2">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-chart-pie"></i></span>
+                            <span class="title Statistiques">Statistiques</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                            <span class="title Clients">Clients</span>
+                        </a>  
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-truck" aria-hidden="true"></i></span>
+                            <span class="title Fournisseurs">Fournisseurs</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                            <span class="title Produits">Gerer Produits</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-dollar-sign"></i></span>
+                            <span class="title ventes">Gerer ventes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-bell" aria-hidden="true"></i></span>
+                            <span class="title Commandes">Gerer Commandes</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="theContent col-lg-10">
+                <div class="firstDiv col-lg-12">
+                    <div class="ContentDivs ClientsDiv col-lg-6">
+                        <div class="more"></div>
+                    </div>
+                    <div class="ContentDivs CommandesDiv col-lg-6">
+    
+                    </div>
                 </div>
-                <div class="ProPrice"><h4>100Dhs</h4></div>
-                <div class="quantity">
-                  <h4>Quantity</h4>
-                  <div class="quantityNum">
-                    <a class="qteButtons" onclick="decrementNumber()"><h3>-</h3></a>
-                    <section id="productQuantity" class="productQuantity">1</section>
-                    <a class="qteButtons" onclick="incrementNumber()"><h3>+</h3></a>                  
-                  </div>
+                <div class="sndDiv col-lg-12">
+                    <div class="ContentDivs RevenusDiv col-lg-6">
+
+                    </div>
+                    <div class="ContentDivs AchatDiv col-lg-6">
+    
+                    </div>
                 </div>
-              </div>
-                <a href="#"><button class="Add">ADD TO CART</button></a>
             </div>
         </div>
-
+        
+          
     </main>
 
 

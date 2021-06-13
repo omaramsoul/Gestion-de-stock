@@ -41,3 +41,7 @@
 .controles li:nth-child(2) a::before {
     transform: rotate(225deg);
 }
+
+.dropdown-item {
+    cursor: pointer;
+}

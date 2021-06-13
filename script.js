@@ -12,3 +12,15 @@ function GoToMaison () {
     var title = "Maison et Jardin";
     document.getElementById("nProducts").innerHTML = title;
 }
+
+function incrementNumber() {
+    var number = 1;
+    var qteNumber = ++number;
+    document.getElementById("productQuantity").innerHTML = qteNumber;
+}
+
+(function(){
+    $('#msbo').on('click', function(){
+      $('body').toggleClass('msb-x');
+    });
+  }());
