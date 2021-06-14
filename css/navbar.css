@@ -9,24 +9,29 @@ body {
 
 .btn-outline-success {
     border: none !important;
-    color: white;
-    background-color: black !important;
+    color: black;
+    background-color: none !important;
 }
 
 .btn-outline-success:focus {
     box-shadow: none !important;
 }
 
-.btn-outline-success:hover {
-    background-color: #fd9502 !important;
+.btn-outline-success:hover {    
+    background-color: white !important;
+    color: #DEA85E;
     border: none;
 }
 
 .signup {
     color: black !important;
-    margin-right: 10px;
     text-decoration: none !important;
     text-decoration-line: none !important;
+    margin-left: 3px;
+}
+
+.signup:hover {
+    color: #DEA85E!important;
 }
 
 .cartIcon {
@@ -79,12 +84,20 @@ body {
     color: white;
 }
 
+.fa-shopping-bag {
+    color: black;
+}
+
+.fa-shopping-bag:hover {
+    color: #DEA85E;
+}
+
 @media (max-width: 991px) {
     .registration {
         display: block;
     }
 
-    .signup, .cartIcon, .login {
+    .signup, .cartIcon, .login, .shopping-bag {
         display: none;
     }
 }
@@ -93,5 +106,9 @@ body {
 
     .dropdown-menu {
         padding-left: 30px;
+    }
+
+    .shopping-bag {
+        display: none;
     }
 }

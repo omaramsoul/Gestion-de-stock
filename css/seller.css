@@ -66,28 +66,97 @@ body {
 } 
 
 .ContentDivs {
-  border: 1px solid rgb(247, 143, 25);
-  height: 300px;
-  border-radius: 10px;
-  margin: 5px;
-}
-
-.firstDiv, .sndDiv {
-  display: flex;
+  border: 1px solid ;
+  border-radius: 10px!important;
+  height: 200px;
+  width: 48%;
   margin: 0px;
   padding: 0px;
 }
 
+.firstDiv, .sndDiv {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px;
+  padding: 0px;
+}
+
+.firstDiv {
+  padding-bottom: 5px;
+}
+
+.sndDiv {
+  padding-top: 5px;
+}
+
 .theContainer {
   display: flex;
+  margin-top: 20px;
   padding: 0px 5px;
 }
 
 .theContent {
   display: block;
+  text-align: center;
 }
 
 .more {
-  border: 1px solid black;
+  position: absolute;
+  bottom: 0px;
   width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  display: block;
+  text-align: right;
+  padding-top: 12px;
+  padding-right: 20px;
+  font-size: 16px;
 }
+
+.more a {
+  color: rgb(65, 65, 65);
+  text-decoration: none;
+}
+
+.more a:hover {
+  color: rgb(248, 183, 109);
+}
+
+.details {
+  display: flex;
+  padding : 30px;
+  padding-top: 35px;
+}
+
+.descr {
+  text-align: left;
+  font-size: 22px;
+  padding-top: 10px;
+}
+
+.Illustrations {
+  height: 120px;
+  width: 120px;
+}
+
+.ClientsDiv {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #ffffff, rgb(247, 143, 25));
+}
+
+.RevenusDiv {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #ffffff, rgb(247, 143, 25));
+}
+
+.CommandesDiv {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #ffffff, rgb(247, 143, 25));
+}
+
+.AchatDiv {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #ffffff, rgb(247, 143, 25));
+}
+
+
