@@ -7,18 +7,38 @@ body {
     margin-left: auto;
 }
 
+.login {
+    color: white!important;
+    background-color: black!important;
+}
+
+.login:hover {
+    color: white!important;
+    background-color: #DEA85E!important;
+}
+
+.login:focus {
+    background-color: none !important;
+}
+
 .btn-outline-success {
     border: none !important;
     color: black;
     background-color: none !important;
 }
 
+.btn-outline-success:active {
+    background-color: white !important;
+}
+
 .btn-outline-success:focus {
     box-shadow: none !important;
+    border-style: none !important;
+    background-color: none !important;
 }
 
 .btn-outline-success:hover {    
-    background-color: white !important;
+    background-color: white ;
     color: #DEA85E;
     border: none;
 }
@@ -27,7 +47,7 @@ body {
     color: black !important;
     text-decoration: none !important;
     text-decoration-line: none !important;
-    margin-left: 3px;
+    margin-right: 5px;
 }
 
 .signup:hover {

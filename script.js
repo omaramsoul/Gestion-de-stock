@@ -24,3 +24,12 @@ function incrementNumber() {
       $('body').toggleClass('msb-x');
     });
   }());
+
+
+document.querySelector("#AddProductWindow").addEventListener("click", function(){
+    document.querySelector(".AddProductPopUp").classList.add("active");
+});
+
+document.querySelector(".AddProductPopUp .closeBtn").addEventListener("click", function(){
+    document.querySelector(".AddProductPopUp").classList.remove("active");
+})

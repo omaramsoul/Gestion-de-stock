@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/productPage.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/statistics.css">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/manageProducts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" onclick="GoToInformatique()" href="products.html">Informatique et Multimedia</a>
+                        <a class="dropdown-item" onclick="GoToHabillement()" href="products.html">Habillement et Bien Etre</a>
+                        <a class="dropdown-item" onclick="GoToMaison()" href="products.html">Maison et Jardin</a>                
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+                <li class="nav-item"><a class="nav-link registration" href="#">Compte</a></li>
+                <li class="nav-item"><a class="nav-link registration" href="#">Se déconnecter</a></li>         
+              </ul>
+              <div class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="location.href='#'"><span>Username </span> <span><i class="fas fa-user-circle"></i></span> </button>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        
+        <div class="container-flow theContainer">
+            <div class="navigation col-lg-2 col- col-md-3 col-sm-3">
+                <ul>
+                    <li class="barItem">
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-user"></i></span>
+                            <span class="title User">Account</span>
+                        </a>  
+                    </li>
+                    <li class="barItem">
+                        <a href="statistics.html">
+                            <span class="icon"><i class="fas fa-chart-pie"></i></span>
+                            <span class="title Statistiques">Statistics</span>
+                        </a>
+                    </li>
+                    <li class="barItem"> 
+                        <a href="manageProducts.html">
+                            <span class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                            <span class="title Produits">Manage Products</span>
+                        </a>
+                    </li>
+                    <li class="barItem">
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-truck"></i></span>
+                            <span class="title Commandes">Manage Orders</span>
+                        </a>
+                    </li>   
+                </ul>
+            </div>
+            <div class="theContent col-lg-10 col-md-8 col-sm-9">
+                <div class="AddProduct">
+                    <div class="listTextField">
+                        <p class="listText"><h5>Products list</h5></p>
+                    </div>
+                    <div class="addProductBtnField">
+                        <button class="addProductBtn" id="AddProductWindow"><i class="fas fa-plus-circle"></i> Add Product</button>
+                    </div>
+                </div>
+                <div class="productsList">
+                    <table class="listOfProducts">
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Unit Price (Dhs)</th>
+                            <th>Total (Dhs)</th>
+                            <th class="delete"></th>
+                        </tr>
+                        <tr>
+                            <td class="imgField"><div class="productImg"></div></td>
+                            <td class="P-Name">P_Name</td>
+                            <td class="P-Category">-</td>
+                            <td class="P-Quantity">0</td>
+                            <td class="P-Unit-Price">0</td>
+                            <td class="Total">0</td>
+                            <td class="deleteIcon"><button class="deletebtn"><i class="fas fa-cog"></i> <i class="fas fa-trash-alt"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td class="imgField"><div class="productImg"></div></td>
+                            <td class="P-Name">P_Name</td>
+                            <td class="P-Category">-</td>
+                            <td class="P-Quantity">0</td>
+                            <td class="P-Unit-Price">0</td>
+                            <td class="Total">0</td>
+                            <td class="deleteIcon"><button class="deletebtn"><i class="fas fa-cog"></i> <i class="fas fa-trash-alt"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td class="imgField"><div class="productImg"></div></td>
+                            <td class="P-Name">P_Name</td>
+                            <td class="P-Category">-</td>
+                            <td class="P-Quantity">0</td>
+                            <td class="P-Unit-Price">0</td>
+                            <td class="Total">0</td>
+                            <td class="deleteIcon"><button class="deletebtn"><i class="fas fa-cog"></i> <i class="fas fa-trash-alt"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td class="imgField"><div class="productImg"></div></td>
+                            <td class="P-Name">P_Name</td>
+                            <td class="P-Category">-</td>
+                            <td class="P-Quantity">0</td>
+                            <td class="P-Unit-Price">0</td>
+                            <td class="Total">0</td>
+                            <td class="deleteIcon"><button class="deletebtn"><i class="fas fa-cog"></i> <i class="fas fa-trash-alt"></i></button></td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="AddProductPopUp col-md-8">
+                <div class="closeBtn"><i class="fas fa-times"></i></div>
+                <img src="images/logo.png" class="loginLogo">
+                <p>Add your Product :</p>
+                <div class="ProductForm">
+                    <form action="" class="AddProductForm" id="AddProductForm">
+                        <input type="text" class="NameField Fields" placeholder="Product Name">
+                        <div class="CategoryField">
+                            <select class="CategorySelect Fields">
+                                <option value="" selected disabled hidden>Category</option>
+                                <option value="client">Electronics</option>
+                                <option value="seller">Computers</option>
+                                <option value="seller">Men's Fashion</option>
+                                <option value="seller">Women's Fashion</option>
+                                <option value="seller">Health</option>
+                            </select>
+                        </div>
+                        <textarea rows="4" cols="50" form="AddProductForm" placeholder="Product Description" class="DescriptionField Fields"></textarea></br>
+                        <input type="text" class="QuantityField Fields" placeholder="Product Quantity"></br>
+                        <input type="text" class="PriceField Fields" placeholder="Product Unit Price"></br>
+                        <input type="file" class="ImageField Fields" accept="image/*" id="image">
+                        <label for="image" class="imageLabel Fields"><i class="fas fa-cloud-upload-alt"></i> Product Image</label>
+                    </form>
+                </div>
+                <button class="AddBtn">Add Product</button>
+            </div>
+        </div>
+        
+          
+    </main>
+
+    <!-- <footer class="footer2">
+        <img src="images/logo.png" alt="" class="footerLogo">
+        <div class="verticalLine"></div>
+        <div class="ContactUs">
+            <div class="brandInfos">
+                <div class="brandIcons">
+                    <img src="images/call.png" class="callIcon"><br/>
+                    <img src="images/email.png" class="emailIcon">
+                </div>
+                <div class="brandData">
+                    <p class="brandNumber"> +212-623689100</p>
+                    <p class="brandEmail">  contact@stockin.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="verticalLine"></div>
+        <img src="images/ensiasLogo.png" alt="" class="ensiasLogo">
+    </footer> -->
+
+
+    <script src="bootstrap/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="bootstrap/script.js"></script>
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>

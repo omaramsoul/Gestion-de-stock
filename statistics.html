@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="stylesheet" href="css/seller.css">
+    <link rel="stylesheet" href="css/statistics.css">
     <link rel="icon" href="images/favicon.png">
     <link rel="icon" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
@@ -33,19 +33,19 @@
                       Products
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Informatique et Multimedia</a>
-                      <a class="dropdown-item" href="#">Habillement et Bien Etre</a>
-                      <a class="dropdown-item" href="#">Maison et Jardin</a>
+                        <a class="dropdown-item" onclick=GoToInforamtique() href="products.html">Electronics</a>
+                        <a class="dropdown-item" onclick="GoToHabillement();" href="products.html">Computers</a>
+                        <a class="dropdown-item" onclick="GoToMaison()" href="products.html">Men's Fashion</a>  
+                        <a class="dropdown-item" onclick="GoToMaison()" href="products.html">Women's Fashion</a>   
+                        <a class="dropdown-item" onclick="GoToMaison()" href="products.html">Health</a>                 
                     </div>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#">Sell</a></li>
-                <li class="nav-item"><a class="nav-link registration" href="login.html">Login</a></li>
-                <li class="nav-item"><a class="nav-link registration" href="signup.html">Sign up</a></li>         
+                <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+                <li class="nav-item"><a class="nav-link registration" href="#">Compte</a></li>
+                <li class="nav-item"><a class="nav-link registration" href="#">Se déconnecter</a></li>         
               </ul>
               <div class="form-inline my-2 my-lg-0">
-                <a href="#"><img src="images/cart.png" class="cartIcon"></a>
-                <a href="signup.html" class="signup">Sign up</a>
-                <button class="btn btn-outline-success my-2 my-sm-0 login" type="submit" onclick="location.href='login.html'">Login</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="location.href='#'"><span>Username </span> <span><i class="fas fa-user-circle"></i></span> </button>
               </div>
             </div>
           </nav>
@@ -54,52 +54,40 @@
     <main>
         
         <div class="container-flow theContainer">
-            <div class="navigation col-lg-2">
+            <div class="navigation col-lg-2 col- col-md-3 col-sm-3">
                 <ul>
-                    <li>
+                    <li class="barItem">
                         <a href="#">
-                            <span class="icon"><i class="fas fa-chart-pie"></i></span>
-                            <span class="title Statistiques">Statistiques</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
-                            <span class="title Clients">Clients</span>
+                            <span class="icon"><i class="fas fa-user"></i></span>
+                            <span class="title User">Account</span>
                         </a>  
                     </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon"><i class="fa fa-truck" aria-hidden="true"></i></span>
-                            <span class="title Fournisseurs">Fournisseurs</span>
+                    <li class="barItem">
+                        <a href="statistics.html">
+                            <span class="icon"><i class="fas fa-chart-pie"></i></span>
+                            <span class="title Statistiques">Statistics</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="barItem"> 
+                        <a href="manageProducts.html">
                             <span class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                            <span class="title Produits">Gerer Produits</span>
+                            <span class="title Produits">Manage Products</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="barItem">
                         <a href="#">
-                            <span class="icon"><i class="fas fa-dollar-sign"></i></span>
-                            <span class="title ventes">Gerer ventes</span>
+                            <span class="icon"><i class="fas fa-truck"></i></span>
+                            <span class="title Commandes">Manage Orders</span>
                         </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon"><i class="fa fa-bell" aria-hidden="true"></i></span>
-                            <span class="title Commandes">Gerer Commandes</span>
-                        </a>
-                    </li>
+                    </li>   
                 </ul>
             </div>
-            <div class="theContent col-lg-10">
+            <div class="theContent col-lg-10 col-md-8 col-sm-9">
                 <div class="firstDiv col-lg-12">
-                    <div class="ContentDivs ClientsDiv col-lg-5">
+                    <div class="ContentDivs ClientsDiv col-lg-5 ">
                         <div class="details">
                             <div class="descr col-lg-7">
-                                <p>Nombre de </br>Clients</p>
+                                <p>Number of </br>Clients</p>
                                 <p>0</p>
                             </div>
                             <div class="descrImage col-lg-5">
@@ -107,13 +95,13 @@
                             </div>
                         </div>
                         <div class="more">
-                            <a href="index.html"><span>voir clients</span>  <span><i class="fas fa-arrow-circle-right"></i></span></a>
+                            <a href="index.html"><span>see feedback</span>  <span><i class="fas fa-arrow-circle-right"></i></span></a>
                         </div>
                     </div>
                     <div class="ContentDivs CommandesDiv col-lg-5">
                         <div class="details">
                             <div class="descr col-lg-7">
-                                <p>Commandes en Attente</p>
+                                <p>Orders on Hold</p>
                                 <p>0</p>
                             </div>
                             <div class="descrImage col-lg-5">
@@ -121,7 +109,7 @@
                             </div>
                         </div>
                         <div class="more">
-                            <a href="index.html"><span>voir commandes</span>  <span><i class="fas fa-arrow-circle-right"></i></span></a>
+                            <a href="index.html"><span>see orders</span>  <span><i class="fas fa-arrow-circle-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -129,7 +117,7 @@
                     <div class="ContentDivs RevenusDiv col-lg-5">
                         <div class="details">
                             <div class="descr col-lg-7">
-                                <p>Montant total du Revenu</p>
+                                <p>Total Income amount </p>
                                 <p>0 Dhs</p>
                             </div>
                             <div class="descrImage col-lg-5">
