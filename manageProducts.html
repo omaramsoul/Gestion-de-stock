@@ -111,7 +111,7 @@
                             <td class="P-Unit-Price">0</td>
                             <td class="Total">0</td>
                             <td class="deleteIcon">
-                                <button class="deletebtn"><i class="fas fa-cog"></i></button>
+                                <button class="deletebtn" id="updatePopUp"><i class="fas fa-cog"></i></button>
                                 <button class="deletebtn" id="promotionPopUp"><i class="fas fa-tag"></i></button>
                                 <button class="deletebtn" id="deletePopUp"><i class="fas fa-trash-alt"></i></button>
                             </td>                        
@@ -125,9 +125,9 @@
                             <td class="P-Unit-Price">0</td>
                             <td class="Total">0</td>
                             <td class="deleteIcon">
-                                <button class="deletebtn"><i class="fas fa-cog"></i></button>
-                                <button class="deletebtn" id="promotionPopUp"><i class="fas fa-tag"></i></button>
-                                <button class="deletebtn" id="deletePopUp"><i class="fas fa-trash-alt"></i></button>
+                                <button class="deletebtn" id="updatePopUp1"><i class="fas fa-cog"></i></button>
+                                <button class="deletebtn" id="promotionPopUp1"><i class="fas fa-tag"></i></button>
+                                <button class="deletebtn" id="deletePopUp1"><i class="fas fa-trash-alt"></i></button>
                             </td>                        
                         </tr>
                         <tr>
@@ -139,9 +139,9 @@
                             <td class="P-Unit-Price">0</td>
                             <td class="Total">0</td>
                             <td class="deleteIcon">
-                                <button class="deletebtn"><i class="fas fa-cog"></i></button>
-                                <button class="deletebtn" id="promotionPopUp"><i class="fas fa-tag"></i></button>
-                                <button class="deletebtn" id="deletePopUp"><i class="fas fa-trash-alt"></i></button>
+                                <button class="deletebtn" id="updatePopUp2"><i class="fas fa-cog"></i></button>
+                                <button class="deletebtn" id="promotionPopUp2"><i class="fas fa-tag"></i></button>
+                                <button class="deletebtn" id="deletePopUp2"><i class="fas fa-trash-alt"></i></button>
                             </td>                       
                         </tr>
                         <tr>
@@ -153,9 +153,9 @@
                             <td class="P-Unit-Price">0</td>
                             <td class="Total">0</td>
                             <td class="deleteIcon">
-                                <button class="deletebtn"><i class="fas fa-cog"></i></button>
-                                <button class="deletebtn" id="promotionPopUp"><i class="fas fa-tag"></i></button>
-                                <button class="deletebtn" id="deletePopUp"><i class="fas fa-trash-alt"></i></button>
+                                <button class="deletebtn updatePopUp" id="updatePopUp3"><i class="fas fa-cog"></i></button>
+                                <button class="deletebtn" id="promotionPopUp3"><i class="fas fa-tag"></i></button>
+                                <button class="deletebtn" id="deletePopUp3"><i class="fas fa-trash-alt"></i></button>
                             </td>
                         </tr>
                     </table>
@@ -170,7 +170,7 @@
                 <p>Add your Product :</p>
                 <div class="ProductForm">
                     <form action="" class="AddProductForm" id="AddProductForm">
-                        <input type="text" class="NameField Fields" placeholder="Product Name">
+                        <input type="text" class="NameField Fields" id="productNameInput" placeholder="Product Name">
                         <div class="CategoryField">
                             <select class="CategorySelect Fields">
                                 <option value="" selected disabled hidden>Category</option>
@@ -181,15 +181,15 @@
                                 <option value="seller">Health</option>
                             </select>
                         </div>
-                        <textarea rows="4" cols="50" form="AddProductForm" placeholder="Product Description" class="DescriptionField Fields"></textarea></br>
-                        <input type="text" class="QuantityField Fields" placeholder="Product Quantity"></br>
-                        <input type="text" class="PriceField Fields" placeholder="Product Unit Price (Dhs)"></br>
+                        <textarea rows="4" cols="50" form="AddProductForm" id="productDescriptionInput" placeholder="Product Description" class="DescriptionField Fields"></textarea></br>
+                        <input type="text" class="QuantityField Fields" id="productQuantityInput" placeholder="Product Quantity"></br>
+                        <input type="text" class="PriceField Fields" id="productPriceInput" placeholder="Product Unit Price (Dhs)"></br>
                         <label for="file-upload" class="custom-file-upload Fields">
-                            <i class="fa fa-cloud-upload"></i> Upload Image</label>
+                            <i class="fa fa-cloud-upload"></i> Upload image</label>
                         <input id="file-upload" name='upload_cont_img' type="file">       
                     </form>
                 </div>
-                <button class="AddBtn">Add Product</button>
+                <button class="AddBtn" onclick="addProduct()">Add Product</button>
             </div>
         </div>
         <div class="container">
@@ -213,11 +213,39 @@
                         <label for="percentage" class="labelDate">Percentage : </label>
                         <input type="text" id="percentage" class="dateInput percentageInp" placeholder="Ex : 15%">
                     </form>  
-                </div>            
+                </div>      
+                <button class="SaveBtn">Save</button>
+            <button class="UndoBtn">Undo</button>      
             </div>
         </div>
-        
-          
+        <div class="UpdateProductPopUp col-md-8">
+            <div class="closeBtn"><i class="fas fa-times"></i></div>
+            <img src="images/logo.png" class="loginLogo">
+            <p>Update product informations :</p>
+            <div class="ProductForm">
+                <form action="" class="AddProductForm" id="AddProductForm">
+                    <input type="text" class="NameField Fields" placeholder="Product Name">
+                    <div class="CategoryField">
+                        <select class="CategorySelect Fields">
+                            <option value="" selected disabled hidden>Category</option>
+                            <option value="client">Electronics</option>
+                            <option value="seller">Computers</option>
+                            <option value="seller">Men's Fashion</option>
+                            <option value="seller">Women's Fashion</option>
+                            <option value="seller">Health</option>
+                        </select>
+                    </div>
+                    <textarea rows="4" cols="50" form="AddProductForm" placeholder="Product Description" class="DescriptionField Fields"></textarea></br>
+                    <input type="text" class="QuantityField Fields" placeholder="Product Quantity"></br>
+                    <input type="text" class="PriceField Fields" placeholder="Product Unit Price (Dhs)"></br>
+                    <label for="file-upload" class="custom-file-upload Fields">
+                        <i class="fa fa-cloud-upload"></i> Upload image</label>
+                    <input id="file-upload" name='upload_cont_img' type="file">       
+                </form>
+            </div>
+            <button class="SaveBtn">Save</button>
+            <button class="UndoBtn">Undo</button>
+        </div>
     </main>
 
     <footer class="footer2">

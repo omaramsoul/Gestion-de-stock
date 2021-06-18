@@ -12,15 +12,18 @@
 .addProductBtn {
     border: 1px solid black;
     border-radius: 10px;
-    background-color: black;
-    color: white;
-    padding: 0px 10px;
+    background-color: white;
+    color: black;
+    padding: 3px 20px;
+    transition: 0.5s;
 }
 
 .addProductBtn:hover {
     color: white;
-    border: 1px solid #ffb349;
-    background-color: #ffb349;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 15px 0px 15px 0px;
+    transition: 0.5s;
 }
 
 .listOfProducts {
@@ -89,7 +92,7 @@ td, th {
     width: 230px;
 }
 
-.AddProductPopUp {
+.AddProductPopUp, .UpdateProductPopUp {
     position: absolute;
     top: -150%;
     left: 50%;
@@ -107,7 +110,7 @@ td, th {
     z-index: 100;
 }
 
-.AddProductPopUp.active {
+.AddProductPopUp.active , .UpdateProductPopUp.active{
     top: 50%;
     opacity: 1;
     transform: translate(-50%, -50%)scale(1);
@@ -182,6 +185,22 @@ td, th {
     transition: 0.5s;
 }
 
+.SaveBtn, .UndoBtn {
+    margin-top: 10px;
+    width: 250px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.SaveBtn:hover, .UndoBtn:hover {
+    border-radius: 20px 0px 20px 0px;
+    transition: 0.5s;
+}
+
 .deleteProductPopUp {
     margin: auto;
     position: absolute;
@@ -197,6 +216,7 @@ td, th {
     transition: top 0ms ease-in-out 200ms,
                 opacity 200ms ease-in-out 0ms,
                 transform 200ms ease-in-out 0ms;
+    z-index: 100;
 }
 
 .deleteProductPopUp.active {
@@ -209,17 +229,18 @@ td, th {
 }
 
 .btns {
-    border: 1px solid rgb(248, 183, 109);
-    background-color: rgb(250, 250, 250);
-    color: rgb(248, 183, 109);
+    border: 1px solid black;
+    background-color: black;
+    color: white;
     font-weight: 600;
     border-radius: 5px;
-    padding: 4px 20px;
+    padding: 4px 30px;
+    transition: 0.5s;
 }
 
 .btns:hover {
-    color: white;
-    background-color: rgb(248, 183, 109);
+    border-radius: 20px 0px 20px 0px;
+    transition: 0.5s;
 }
 
 #file-upload {
@@ -241,6 +262,7 @@ td, th {
     transition: top 0ms ease-in-out 200ms,
                 opacity 200ms ease-in-out 0ms,
                 transform 200ms ease-in-out 0ms;
+    z-index: 100;
 }
 
 .promotionProductPopUp.active {

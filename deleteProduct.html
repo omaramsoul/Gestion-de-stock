@@ -52,26 +52,33 @@
 
     <main>
         <div class="container">
-            <div class="promotionProductPopUp col-lg-6">
-                <div class="closeBtnPromotion"><i class="fas fa-times">x</i></div>
+            <div class="AddProductPopUp col-md-8">
+                <div class="closeBtn"><i class="fas fa-times"></i></div>
                 <img src="images/logo.png" class="loginLogo">
-                <p>Add promotion to your product : </p>
-                <div class="containerDiv">
-                    <form action="" class="promotionForm col-lg-8">
-                        <div>
-                            <label for="startDate" class="labelDate">Start date : </label>
-                            <input type="date" id="startDate" class="dateInput startDateInp"><br>
+                <p>Update product informations :</p>
+                <div class="ProductForm">
+                    <form action="" class="AddProductForm" id="AddProductForm">
+                        <input type="text" class="NameField Fields" placeholder="Product Name">
+                        <div class="CategoryField">
+                            <select class="CategorySelect Fields">
+                                <option value="" selected disabled hidden>Category</option>
+                                <option value="client">Electronics</option>
+                                <option value="seller">Computers</option>
+                                <option value="seller">Men's Fashion</option>
+                                <option value="seller">Women's Fashion</option>
+                                <option value="seller">Health</option>
+                            </select>
                         </div>
-                        <div>
-                            <label for="endDate" class="labelDate">End date : </label>
-                            <input type="date" id="endDate" class="dateInput endDateInp"><br>
-                        </div>
-                        <div>
-                            <label for="percentage" class="labelDate">Percentage : </label>
-                            <input type="text" id="percentage" class="dateInput percentageInp" placeholder="Ex : 15%">
-                        </div>
-                    </form>  
-                </div>            
+                        <textarea rows="4" cols="50" form="AddProductForm" placeholder="Product Description" class="DescriptionField Fields"></textarea></br>
+                        <input type="text" class="QuantityField Fields" placeholder="Product Quantity"></br>
+                        <input type="text" class="PriceField Fields" placeholder="Product Unit Price (Dhs)"></br>
+                        <label for="file-upload" class="custom-file-upload Fields">
+                            <i class="fa fa-cloud-upload"></i> Upload image</label>
+                        <input id="file-upload" name='upload_cont_img' type="file">       
+                    </form>
+                </div>
+                <button class="SaveBtn">Save</button>
+                <button class="UndoBtn">Undo</button>
             </div>
         </div>
     </main>
