@@ -1,0 +1,65 @@
+.promotionProductPopUp {
+    margin: auto;
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%)scale(1.25);
+    padding: 20px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+}
+
+.promotionProductPopUp.active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%)scale(1);
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+}
+
+.containerDiv {
+    text-align: flex;
+    justify-content: center;
+}
+
+.promotionForm {
+    padding: 10px;
+    text-align: center;
+}
+
+.loginLogo {
+    height: 35px;
+}
+
+.closeBtnPromotion {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.dateInput {
+    border: 1px solid rgb(248, 183, 109);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.startDateInp {
+    margin-left: 20px;
+}
+
+.endDateInp {
+    margin-left: 29px;
+}
+
+.percentageInp {
+    margin-left: 11px;
+    width: 189px;
+}

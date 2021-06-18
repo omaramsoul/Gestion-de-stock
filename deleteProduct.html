@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="delete.css">
+    <link rel="icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" onclick=GoToInforamtique() href="products.html">Electronics</a>
+                        <a class="dropdown-item" onclick="GoToHabillement();" href="products.html">Computers</a>
+                        <a class="dropdown-item" onclick="GoToMaison()" href="products.html">Men's Fashion</a>  
+                        <a class="dropdown-item" onclick="GoToMaison()" href="products.html">Women's Fashion</a>   
+                        <a class="dropdown-item" onclick="GoToMaison()" href="products.html">Health</a> 
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+                <li class="nav-item"><a class="nav-link registration" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link registration" href="signup.html">Sign up</a></li>         
+              </ul>
+              <div class="form-inline my-2 my-lg-0">
+                <a href="signup.html" class="signup">Sign up</a>
+                <button class="btn btn-outline-success my-2 my-sm-0 login" type="submit" onclick="location.href='login.html'">Login</button>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="promotionProductPopUp col-lg-6">
+                <div class="closeBtnPromotion"><i class="fas fa-times">x</i></div>
+                <img src="images/logo.png" class="loginLogo">
+                <p>Add promotion to your product : </p>
+                <div class="containerDiv">
+                    <form action="" class="promotionForm col-lg-8">
+                        <div>
+                            <label for="startDate" class="labelDate">Start date : </label>
+                            <input type="date" id="startDate" class="dateInput startDateInp"><br>
+                        </div>
+                        <div>
+                            <label for="endDate" class="labelDate">End date : </label>
+                            <input type="date" id="endDate" class="dateInput endDateInp"><br>
+                        </div>
+                        <div>
+                            <label for="percentage" class="labelDate">Percentage : </label>
+                            <input type="text" id="percentage" class="dateInput percentageInp" placeholder="Ex : 15%">
+                        </div>
+                    </form>  
+                </div>            
+            </div>
+        </div>
+    </main>
+
+    <footer>
+      <img src="images/logo.png" alt="" class="footerLogo">
+      <div class="verticalLine"></div>
+      <div class="ContactUs">
+          <div class="brandInfos">
+              <div class="brandIcons">
+                  <img src="images/call.png" class="callIcon"><br/>
+                  <img src="images/email.png" class="emailIcon">
+              </div>
+              <div class="brandData">
+                  <p class="brandNumber"> +212-623689100</p>
+                  <p class="brandEmail">  contact@stockin.com</p>
+              </div>
+          </div>
+      </div>
+      <div class="verticalLine"></div>
+      <img src="images/ensiasLogo.png" alt="" class="ensiasLogo">
+  </footer>
+
+    
+
+    <script src="bootstrap/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="bootstrap/script.js"></script>
+    <script src="manageProducts.js"></script>
+
+</body>
+</html>

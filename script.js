@@ -1,16 +1,7 @@
-function GoToInforamtique () {
-    var title = "Informatique et Multimedia";
-    document.getElementById("nProducts").innerHTML = title;
-}
-
-function GoToHabillement () {
-    var title = "Habillement et Bien Etre";
-    document.getElementById("nProducts").innerHTML = title;
-}
-
-function GoToMaison () {
-    var title = "Maison et Jardin";
-    document.getElementById("nProducts").innerHTML = title;
+function goToURL(title) {
+    var para = new URLSearchParams();
+    para.append("title", title);
+    location.href = 'http://127.0.0.1:5500/products.html?' + title;
 }
 
 function incrementNumber() {
@@ -26,10 +17,4 @@ function incrementNumber() {
   }());
 
 
-document.querySelector("#AddProductWindow").addEventListener("click", function(){
-    document.querySelector(".AddProductPopUp").classList.add("active");
-});
 
-document.querySelector(".AddProductPopUp .closeBtn").addEventListener("click", function(){
-    document.querySelector(".AddProductPopUp").classList.remove("active");
-})

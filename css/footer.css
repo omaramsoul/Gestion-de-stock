@@ -6,10 +6,11 @@ footer {
     padding: 15px 0px;
     bottom:0;
     width: 100%;
+    z-index: 1;
 }
 
 .footer2 {
-    position: absolute;
+    position: fixed;
     bottom:0;
     width: 100%;
 }

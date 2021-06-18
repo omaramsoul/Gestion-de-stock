@@ -94,6 +94,7 @@
                     <table class="listOfProducts">
                         <tr>
                             <th>Image</th>
+                            <th>Date</th>
                             <th>Name</th>
                             <th>Category</th>
                             <th>Quantity</th>
@@ -103,39 +104,59 @@
                         </tr>
                         <tr>
                             <td class="imgField"><div class="productImg"></div></td>
+                            <td class="dateField">--/--/----</td>
                             <td class="P-Name">P_Name</td>
                             <td class="P-Category">-</td>
                             <td class="P-Quantity">0</td>
                             <td class="P-Unit-Price">0</td>
                             <td class="Total">0</td>
-                            <td class="deleteIcon"><button class="deletebtn"><i class="fas fa-cog"></i> <i class="fas fa-trash-alt"></i></button></td>
+                            <td class="deleteIcon">
+                                <button class="deletebtn"><i class="fas fa-cog"></i></button>
+                                <button class="deletebtn" id="promotionPopUp"><i class="fas fa-tag"></i></button>
+                                <button class="deletebtn" id="deletePopUp"><i class="fas fa-trash-alt"></i></button>
+                            </td>                        
                         </tr>
                         <tr>
                             <td class="imgField"><div class="productImg"></div></td>
+                            <td class="dateField">--/--/----</td>
                             <td class="P-Name">P_Name</td>
                             <td class="P-Category">-</td>
                             <td class="P-Quantity">0</td>
                             <td class="P-Unit-Price">0</td>
                             <td class="Total">0</td>
-                            <td class="deleteIcon"><button class="deletebtn"><i class="fas fa-cog"></i> <i class="fas fa-trash-alt"></i></button></td>
+                            <td class="deleteIcon">
+                                <button class="deletebtn"><i class="fas fa-cog"></i></button>
+                                <button class="deletebtn" id="promotionPopUp"><i class="fas fa-tag"></i></button>
+                                <button class="deletebtn" id="deletePopUp"><i class="fas fa-trash-alt"></i></button>
+                            </td>                        
                         </tr>
                         <tr>
                             <td class="imgField"><div class="productImg"></div></td>
+                            <td class="dateField">--/--/----</td>
                             <td class="P-Name">P_Name</td>
                             <td class="P-Category">-</td>
                             <td class="P-Quantity">0</td>
                             <td class="P-Unit-Price">0</td>
                             <td class="Total">0</td>
-                            <td class="deleteIcon"><button class="deletebtn"><i class="fas fa-cog"></i> <i class="fas fa-trash-alt"></i></button></td>
+                            <td class="deleteIcon">
+                                <button class="deletebtn"><i class="fas fa-cog"></i></button>
+                                <button class="deletebtn" id="promotionPopUp"><i class="fas fa-tag"></i></button>
+                                <button class="deletebtn" id="deletePopUp"><i class="fas fa-trash-alt"></i></button>
+                            </td>                       
                         </tr>
                         <tr>
                             <td class="imgField"><div class="productImg"></div></td>
+                            <td class="dateField">--/--/----</td>
                             <td class="P-Name">P_Name</td>
                             <td class="P-Category">-</td>
                             <td class="P-Quantity">0</td>
                             <td class="P-Unit-Price">0</td>
                             <td class="Total">0</td>
-                            <td class="deleteIcon"><button class="deletebtn"><i class="fas fa-cog"></i> <i class="fas fa-trash-alt"></i></button></td>
+                            <td class="deleteIcon">
+                                <button class="deletebtn"><i class="fas fa-cog"></i></button>
+                                <button class="deletebtn" id="promotionPopUp"><i class="fas fa-tag"></i></button>
+                                <button class="deletebtn" id="deletePopUp"><i class="fas fa-trash-alt"></i></button>
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -162,19 +183,44 @@
                         </div>
                         <textarea rows="4" cols="50" form="AddProductForm" placeholder="Product Description" class="DescriptionField Fields"></textarea></br>
                         <input type="text" class="QuantityField Fields" placeholder="Product Quantity"></br>
-                        <input type="text" class="PriceField Fields" placeholder="Product Unit Price"></br>
-                        <input type="file" class="ImageField Fields" accept="image/*" id="image">
-                        <label for="image" class="imageLabel Fields"><i class="fas fa-cloud-upload-alt"></i> Product Image</label>
+                        <input type="text" class="PriceField Fields" placeholder="Product Unit Price (Dhs)"></br>
+                        <label for="file-upload" class="custom-file-upload Fields">
+                            <i class="fa fa-cloud-upload"></i> Upload Image</label>
+                        <input id="file-upload" name='upload_cont_img' type="file">       
                     </form>
                 </div>
                 <button class="AddBtn">Add Product</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="deleteProductPopUp col-lg-6">
+                <p>Sure you want to delete this product ?</p>
+                <button class="yesBtn btns">Yes</button>
+                <button class="noBtn btns">No</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="promotionProductPopUp col-lg-6">
+                <div class="closeBtnPromotion"><i class="fas fa-times"></i></div>
+                <img src="images/logo.png" class="loginLogo">
+                <p>Add promotion to your product : </p>
+                <div class="containerDiv">
+                    <form action="" class="promotionForm col-lg-8">
+                        <label for="startDate" class="labelDate">Start date : </label>
+                        <input type="date" id="startDate" class="dateInput startDateInp"><br>
+                        <label for="endDate" class="labelDate">End date : </label>
+                        <input type="date" id="endDate" class="dateInput endDateInp"><br>
+                        <label for="percentage" class="labelDate">Percentage : </label>
+                        <input type="text" id="percentage" class="dateInput percentageInp" placeholder="Ex : 15%">
+                    </form>  
+                </div>            
             </div>
         </div>
         
           
     </main>
 
-    <!-- <footer class="footer2">
+    <footer class="footer2">
         <img src="images/logo.png" alt="" class="footerLogo">
         <div class="verticalLine"></div>
         <div class="ContactUs">
@@ -191,13 +237,14 @@
         </div>
         <div class="verticalLine"></div>
         <img src="images/ensiasLogo.png" alt="" class="ensiasLogo">
-    </footer> -->
+    </footer> 
 
 
     <script src="bootstrap/jquery-3.6.0.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
     <script src="bootstrap/script.js"></script>
-    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="manageProducts.js"></script>
     
     
 </body>

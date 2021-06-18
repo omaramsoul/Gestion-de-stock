@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body onload="loadFunction()">
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -31,11 +31,11 @@
                       Products
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" onclick=GoToInforamtique() href="products.html">Electronics</a>
-                        <a class="dropdown-item" onclick="GoToHabillement();" href="products.html">Computers</a>
-                        <a class="dropdown-item" onclick="GoToMaison()" href="products.html">Men's Fashion</a>  
-                        <a class="dropdown-item" onclick="GoToMaison()" href="products.html">Women's Fashion</a>   
-                        <a class="dropdown-item" onclick="GoToMaison()" href="products.html">Health</a> 
+                        <a class="dropdown-item" onclick="setCategoryTitle('Electronics')" href="products.html">Electronics</a>
+                        <a class="dropdown-item" onclick="setCategoryTitle('Computers')" href="products.html">Computers</a>
+                        <a class="dropdown-item" onclick="setCategoryTitle('Men s Fashion')" href="products.html">Men's Fashion</a>  
+                        <a class="dropdown-item" onclick="setCategoryTitle('Women s Fashion')" href="products.html">Women's Fashion</a>   
+                        <a class="dropdown-item" onclick="setCategoryTitle('Health')" href="products.html">Health</a> 
                     </div>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
@@ -53,7 +53,7 @@
     <main>
         <div class="container productsDiv col-md-12">
             <br/>
-            <h4 id="nProducts" class="newProducts"></h4>
+            <h4 id="productsName" class="newProducts"></h4>
             <div class="horizontalLine"></div>
             <br/> 
         </div>
@@ -252,7 +252,7 @@
     <script src="bootstrap/jquery-3.6.0.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
     <script src="bootstrap/script.js"></script>
-    <script src="script.js"></script>
+    <script src="products.js"></script>
 
 </body>
 </html>
