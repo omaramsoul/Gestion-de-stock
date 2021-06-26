@@ -65,6 +65,16 @@ document.querySelector(".UpdateProductPopUp .closeBtn").addEventListener("click"
     document.querySelector(".UpdateProductPopUp").classList.remove("active");
 })
 
+//The account pop up :
+document.querySelector("#accountPopUp").addEventListener("click", function(){
+    document.querySelector(".userPopUp").classList.add("active");
+})
+function hidePopup() {
+    document.querySelector('.userPopUp').classList.remove("active");
+}
+
+
+var output = 0;
 
 function addProduct() {
 
@@ -101,7 +111,38 @@ function addProduct() {
         document.querySelector(".UpdateProductPopUp").classList.add("active");
     })
 
+    var loadFile = function(event) {
+        var id = "imageOutput" + ++output;
+        var image = document.getElementById(id);
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+    
+
 }
+
+var index, table = document.getElementById('table');
+
+function deleteProductPopUp() {
+    
+    for(var i = 1; i < table.rows.length; i++)
+    {
+        table.rows[i].cells[7].onclick = function()
+        {   
+            
+            index = this.parentElement.rowIndex;
+            console.log(index);
+            
+        };
+    
+    }
+    console.log(index);
+
+}
+
+
+
+
+
 
 
 

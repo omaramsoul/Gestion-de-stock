@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/sideBar.css">
+    <link rel="stylesheet" href="css/manageOrders.css">
+    <link rel="icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" onclick="GoToInformatique()" href="products.html">Informatique et Multimedia</a>
+                        <a class="dropdown-item" onclick="GoToHabillement()" href="products.html">Habillement et Bien Etre</a>
+                        <a class="dropdown-item" onclick="GoToMaison()" href="products.html">Maison et Jardin</a>                
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+                <li class="nav-item"><a class="nav-link registration" href="#">Compte</a></li>
+                <li class="nav-item"><a class="nav-link registration" href="#">Se déconnecter</a></li>         
+              </ul>
+              <div class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-success my-2 my-sm-0" id="accountPopUp" type="submit" onclick="location.href='#'"><span>Username </span> <span><i class="fas fa-user-circle"></i></span> </button>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        
+        <div class="sideBar">
+            
+            <div class="profileImageSideBar">
+                <img src="images/profile image.png" alt="My Image" class="profileImage">
+                <h4 class="userName">Username</h4>
+            </div>
+            <a href="" class="SideBarItems "><i class="far fa-user-circle"></i> <span>Account</span></a>
+            <a href="" class="SideBarItems "><i class="far fa-chart-bar"></i> <span>Dashboard</span></a>
+            <a href="" class="SideBarItems "><i class="fas fa-tag"></i> <span>Manage Products</span></a>
+            <a href="" class="SideBarItems "><i class="fas fa-shopping-cart"></i> <span>Manage Orders</span></a>
+            <a href="" class="SideBarItems "><i class="fas fa-truck"></i> <span>Manage Deliveries</span></a>
+
+        </div>
+
+        <div class="container">
+            
+            <div class="TitlesDiv">
+                <h4 class="tableTitle">Products list </h4>
+            </div>
+
+            <div class="tableContainer">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Client</th>
+                            <th>Order ID</th>
+                            <th>Product</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th class="ConfirmCase">Confirm</th>
+                            <th class="DeleteCase">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Omar AMSOUL</td>
+                            <td>#6461</td>
+                            <td>
+                                <img src="images/nike shoes.png" alt="Product image" class="productImage">
+                                <span class="productName">Nike shoes size 40</span>
+                            </td>
+                            <td class="amount">1500 Dhs</td>
+                            <td>26/07/2021</td>
+                            <td class="ConfirmData"><i class="fas fa-check-circle"></i></td>
+                            <td class="DeleteData"><i class="fas fa-trash-alt"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Mouad MADOUN</td>
+                            <td>#6460</td>
+                            <td>
+                                <img src="images/adida_tshirt_men_-removebg-preview.png" alt="Product image" class="productImage">
+                                <span class="productName">Nike T-shirt size L</span>
+                            </td>
+                            <td class="amount">300 Dhs</td>
+                            <td>25/07/2021</td>
+                            <td class="ConfirmData"><i class="fas fa-check-circle"></i></td>
+                            <td class="DeleteData"><i class="fas fa-trash-alt"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Lionel Messi</td>
+                            <td>#6459</td>
+                            <td>
+                                <img src="images/adidas_shoes-removebg-preview.png" alt="Product image" class="productImage">
+                                <span class="productName">Adidas shoes size 45</span>
+                            </td>
+                            <td class="amount">1200 Dhs</td>
+                            <td>25/07/2021</td>
+                            <td class="ConfirmData"><i class="fas fa-check-circle"></i></td>
+                            <td class="DeleteData"><i class="fas fa-trash-alt"></i></td>
+                        </tr>
+                    </tbody>
+    
+                </table>
+
+            </div>
+
+        </div>
+            
+        
+    </main>
+
+    <footer>
+        <img src="images/logo.png" alt="" class="footerLogo">
+        <div class="verticalLine"></div>
+        <div class="ContactUs">
+            <div class="brandInfos">
+                <div class="brandIcons">
+                    <img src="images/call.png" class="callIcon"><br/>
+                    <img src="images/email.png" class="emailIcon">
+                </div>
+                <div class="brandData">
+                    <p class="brandNumber"> +212-623689100</p>
+                    <p class="brandEmail">  contact@stockin.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="verticalLine"></div>
+        <img src="images/ensiasLogo.png" alt="" class="ensiasLogo">
+    </footer>
+
+
+    <script src="bootstrap/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="bootstrap/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="manageProducts.js"></script>
+    
+    
+</body>
+</html>

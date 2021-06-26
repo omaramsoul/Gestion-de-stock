@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/productCard.css">
+    <link rel="icon" href="images/stockinFavIcon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" onclick="GoToInformatique()" href="productCard.html">Informatique et Multimedia</a>
+                        <a class="dropdown-item" onclick="GoToHabillement()" href="productCard.html">Habillement et Bien Etre</a>
+                        <a class="dropdown-item" onclick="GoToMaison()" href="productCard.html">Maison et Jardin</a>                
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+                <li class="nav-item"><a class="nav-link registration" href="#">Compte</a></li>
+                <li class="nav-item"><a class="nav-link registration" href="#">Se déconnecter</a></li>         
+              </ul>
+              <div class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-success my-2 my-sm-0" id="accountPopUp" type="submit" onclick="location.href='#'"><span>Username </span> <span><i class="fas fa-user-circle"></i></span> </button>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+
+        <div class="container">
+            
+            <div class="row">
+
+                <div class="productCardContainer col-lg-3">
+                    <div class="productCard">
+
+                        <a href="productPage.html">
+                            <img src="images/nike shoes.png" alt="" class="productImage">
+                            <h5 class="productName">Nike</h5>
+                        </a>
+                        <i class="far fa-heart"></i>
+                        <span class="productPrice">1 500 Dhs</span>
+                        <i class="fas fa-shopping-cart"></i>
+                        
+                    </div>
+                </div>
+
+                <div class="productCardContainer col-lg-3">
+                    <div class="productCard">
+
+                        <a href="productPage.html">
+                            <img src="images/adida_tshirt_men_-removebg-preview.png" alt="" class="productImage">
+                            <h5 class="productName">Adidas T-shirt</h5>
+                        </a>
+                        <i class="far fa-heart"></i>
+                        <span class="productPrice">300 Dhs</span>
+                        <i class="fas fa-shopping-cart"></i>
+                        
+                    </div>
+                </div>
+
+                <div class="productCardContainer col-lg-3">
+                    <div class="productCard">
+
+                        <a href="productPage.html">
+                            <img src="images/a  irpods-removebg-preview.png" alt="" class="productImage">
+                            <h5 class="productName">Airpods Pro 12</h5>
+                        </a>
+                        <i class="far fa-heart"></i>
+                        <span class="productPrice">1 400 Dhs</span>
+                        <i class="fas fa-shopping-cart"></i>
+                        
+                    </div>
+                </div>
+
+                <div class="productCardContainer col-lg-3">
+                    <div class="productCard">
+
+                        <a href="productPage.html">
+                            <img src="images/bracelet-removebg-preview.png" alt="" class="productImage">
+                            <h5 class="productName">Cartier bracelet</h5>
+                        </a>
+                        <i class="far fa-heart"></i>
+                        <span class="productPrice">560 Dhs</span>
+                        <i class="fas fa-shopping-cart"></i>
+                        
+                    </div>
+                </div>
+
+                <div class="productCardContainer col-lg-3">
+                    <div class="productCard">
+
+                        <a href="productPage.html">
+                            <img src="images/cf7w-mo-2-removebg-preview.png" alt="" class="productImage">
+                            <h5 class="productName">North Face Cap</h5>
+                        </a>
+                        <i class="far fa-heart"></i>
+                        <span class="productPrice">200 Dhs</span>
+                        <i class="fas fa-shopping-cart"></i>
+                        
+                    </div>
+                </div>
+
+                <div class="productCardContainer col-lg-3">
+                    <div class="productCard">
+
+                        <a href="productPage.html">
+                            <img src="images/8591512620_1_1_3-removebg-preview.png" alt="" class="productImage">
+                            <h5 class="productName">Pull and Bear Hoodie</h5>
+                        </a>
+                        <i class="far fa-heart"></i>
+                        <span class="productPrice">350 Dhs</span>
+                        <i class="fas fa-shopping-cart"></i>
+                        
+                    </div>
+                </div>
+
+                <div class="productCardContainer col-lg-3">
+                    <div class="productCard">
+
+                        <a href="productPage.html">
+                            <img src="images/images-removebg-preview.png" alt="" class="productImage">
+                            <h5 class="productName">Glasses</h5>
+                        </a>
+                        <i class="far fa-heart"></i>
+                        <span class="productPrice">600 Dhs</span>
+                        <i class="fas fa-shopping-cart"></i>
+                        
+                    </div>
+                </div>
+
+                <div class="productCardContainer col-lg-3">
+                    <div class="productCard">
+
+                        <a href="productPage.html">
+                            <img src="images/adidas_shoes-removebg-preview.png" alt="" class="productImage">
+                            <h5 class="productName">Adidas shoes</h5>
+                        </a>
+                        <i class="far fa-heart"></i>
+                        <span class="productPrice">1 200 Dhs</span>
+                        <i class="fas fa-shopping-cart"></i>
+                        
+                    </div>
+                </div>
+
+                <div class="productCardContainer col-lg-3">
+                    <div class="productCard">
+
+                        <a href="productPage.html">
+                            <img src="images/nike shoes.png" alt="" class="productImage">
+                            <h5 class="productName">Nike</h5>
+                        </a>
+                        <i class="far fa-heart"></i>
+                        <span class="productPrice">1 500 Dhs</span>
+                        <i class="fas fa-shopping-cart"></i>
+                        
+                    </div>
+                </div>
+
+                <div class="productCardContainer col-lg-3">
+                    <div class="productCard">
+
+                        <a href="productPage.html">
+                            <img src="images/adida_tshirt_men_-removebg-preview.png" alt="" class="productImage">
+                            <h5 class="productName">Adidas T-shirt</h5>
+                        </a>
+                        <i class="far fa-heart"></i>
+                        <span class="productPrice">300 Dhs</span>
+                        <i class="fas fa-shopping-cart"></i>
+                        
+                    </div>
+                </div>
+
+                <div class="productCardContainer col-lg-3">
+                    <div class="productCard">
+
+                        <a href="productPage.html">
+                            <img src="images/bracelet-removebg-preview.png" alt="" class="productImage">
+                            <h5 class="productName">Cartier bracelet</h5>
+                        </a>
+                        <i class="far fa-heart"></i>
+                        <span class="productPrice">560 Dhs</span>
+                        <i class="fas fa-shopping-cart"></i>
+                        
+                    </div>
+                </div>
+
+                <div class="productCardContainer col-lg-3">
+                    <div class="productCard">
+
+                        <a href="productPage.html">
+                            <img src="images/cf7w-mo-2-removebg-preview.png" alt="" class="productImage">
+                            <h5 class="productName">North Face Cap</h5>
+                        </a>
+                        <i class="far fa-heart"></i>
+                        <span class="productPrice">200 Dhs</span>
+                        <i class="fas fa-shopping-cart"></i>
+                        
+                    </div>
+                </div>
+
+                <div class="controlesDiv col-lg-12">
+                    <ul class="controles">
+                      <li><a href="productCard.html"></a></li>
+                      <li><a href="productCard.html" class="rightPage"></a></li>
+                    </ul>
+                  </div>    
+                
+            </div>
+
+        </div>
+
+        </div>
+        
+    </main>
+
+    <footer class="shoppinCartFooter">
+        <img src="images/logo.png" alt="" class="footerLogo">
+        <div class="verticalLine"></div>
+        <div class="ContactUs">
+            <div class="brandInfos">
+                <div class="brandIcons">
+                    <img src="images/call.png" class="callIcon"><br/>
+                    <img src="images/email.png" class="emailIcon">
+                </div>
+                <div class="brandData">
+                    <p class="brandNumber"> +212-623689100</p>
+                    <p class="brandEmail">  contact@stockin.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="verticalLine"></div>
+        <img src="images/ensiasLogo.png" alt="" class="ensiasLogo">
+    </footer>
+
+
+    <script src="bootstrap/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="bootstrap/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="shoppingCart.js"></script>
+    
+    
+</body>
+</html>

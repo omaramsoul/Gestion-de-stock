@@ -44,13 +44,13 @@
                 <li class="nav-item"><a class="nav-link registration" href="#">Se déconnecter</a></li>         
               </ul>
               <div class="form-inline my-2 my-lg-0">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="location.href='#'"><span>Username </span> <span><i class="fas fa-user-circle"></i></span> </button>
+                <button class="btn btn-outline-success my-2 my-sm-0" id="accountPopUp" type="submit" onclick="location.href='#'"><span>Username </span> <span><i class="fas fa-user-circle"></i></span> </button>
               </div>
             </div>
           </nav>
     </header>
 
-    <main>
+    <main onclick="hidePopup()">
         
         <div class="container-flow theContainer">
             <div class="navigation col-lg-2 col- col-md-3 col-sm-3">
@@ -91,7 +91,7 @@
                     </div>
                 </div>
                 <div class="productsList">
-                    <table class="listOfProducts">
+                    <table class="listOfProducts" id="table">
                         <tr>
                             <th>Image</th>
                             <th>Date</th>
@@ -103,7 +103,7 @@
                             <th class="delete"></th>
                         </tr>
                         <tr>
-                            <td class="imgField"><div class="productImg"></div></td>
+                            <td class="imgField"><img id="imageOutput1"/></td>
                             <td class="dateField">--/--/----</td>
                             <td class="P-Name">P_Name</td>
                             <td class="P-Category">-</td>
@@ -113,11 +113,11 @@
                             <td class="deleteIcon">
                                 <button class="deletebtn" id="updatePopUp"><i class="fas fa-cog"></i></button>
                                 <button class="deletebtn" id="promotionPopUp"><i class="fas fa-tag"></i></button>
-                                <button class="deletebtn" id="deletePopUp"><i class="fas fa-trash-alt"></i></button>
+                                <button class="deletebtn" id="deletePopUp" onclick="deleteProductPopUp()"><i class="fas fa-trash-alt"></i></button>
                             </td>                        
                         </tr>
                         <tr>
-                            <td class="imgField"><div class="productImg"></div></td>
+                            <td class="imgField"><img id="imageOutput2"/></td>
                             <td class="dateField">--/--/----</td>
                             <td class="P-Name">P_Name</td>
                             <td class="P-Category">-</td>
@@ -127,11 +127,11 @@
                             <td class="deleteIcon">
                                 <button class="deletebtn" id="updatePopUp1"><i class="fas fa-cog"></i></button>
                                 <button class="deletebtn" id="promotionPopUp1"><i class="fas fa-tag"></i></button>
-                                <button class="deletebtn" id="deletePopUp1"><i class="fas fa-trash-alt"></i></button>
+                                <button class="deletebtn" id="deletePopUp1" onclick="deleteProductPopUp()"><i class="fas fa-trash-alt"></i></button>
                             </td>                        
                         </tr>
                         <tr>
-                            <td class="imgField"><div class="productImg"></div></td>
+                            <td class="imgField"><img id="imageOutput3"/></td>
                             <td class="dateField">--/--/----</td>
                             <td class="P-Name">P_Name</td>
                             <td class="P-Category">-</td>
@@ -141,11 +141,11 @@
                             <td class="deleteIcon">
                                 <button class="deletebtn" id="updatePopUp2"><i class="fas fa-cog"></i></button>
                                 <button class="deletebtn" id="promotionPopUp2"><i class="fas fa-tag"></i></button>
-                                <button class="deletebtn" id="deletePopUp2"><i class="fas fa-trash-alt"></i></button>
+                                <button class="deletebtn" id="deletePopUp2" onclick="deleteProductPopUp()"><i class="fas fa-trash-alt"></i></button>
                             </td>                       
                         </tr>
                         <tr>
-                            <td class="imgField"><div class="productImg"></div></td>
+                            <td class="imgField"><img id="imageOutput4"/></td>
                             <td class="dateField">--/--/----</td>
                             <td class="P-Name">P_Name</td>
                             <td class="P-Category">-</td>
@@ -155,7 +155,7 @@
                             <td class="deleteIcon">
                                 <button class="deletebtn updatePopUp" id="updatePopUp3"><i class="fas fa-cog"></i></button>
                                 <button class="deletebtn" id="promotionPopUp3"><i class="fas fa-tag"></i></button>
-                                <button class="deletebtn" id="deletePopUp3"><i class="fas fa-trash-alt"></i></button>
+                                <button class="deletebtn" id="deletePopUp3" onclick="deleteProductPopUp()"><i class="fas fa-trash-alt"></i></button>
                             </td>
                         </tr>
                     </table>
@@ -246,9 +246,38 @@
             <button class="SaveBtn">Save</button>
             <button class="UndoBtn">Undo</button>
         </div>
+        <div class="userPopUp">
+
+            <div class="profileImageDiv">
+                <img src="images/fff.jpg" alt="omar" class="profileImage">
+                <span class="UserName">Hi, Omar</span>
+                <hr class="HorizontalLine">
+            </div>
+            <div class="OptionsDiv OptionsDiv1">
+                <i class="far fa-user-circle accountOptionsIcons"></i>
+                <a href="#" class="accountOptions">Manage your account</a>
+            </div>
+            <div class="OptionsDiv">
+                <i class="fas fa-shopping-bag accountOptionsIcons"></i>
+                <a href="#" class="accountOptions">Your cart</a>
+            </div>
+            <div class="OptionsDiv">
+                <i class="far fa-question-circle accountOptionsIcons"></i>
+                <a href="#" class="accountOptions">Help</a>
+            </div>
+            <div class="OptionsDiv">
+                <i class="far fa-comment-dots accountOptionsIcons"></i>
+                <a href="#" class="accountOptions">Send feedback</a>
+            </div>
+            <div class="OptionsDiv">
+                <i class="fas fa-sign-out-alt accountOptionsIcons"></i>
+                <a href="#" class="accountOptions">Sign out</a>
+            </div>
+
+        </div>
     </main>
 
-    <footer class="footer2">
+    <!-- <footer class="footer2">
         <img src="images/logo.png" alt="" class="footerLogo">
         <div class="verticalLine"></div>
         <div class="ContactUs">
@@ -265,7 +294,7 @@
         </div>
         <div class="verticalLine"></div>
         <img src="images/ensiasLogo.png" alt="" class="ensiasLogo">
-    </footer> 
+    </footer> -->
 
 
     <script src="bootstrap/jquery-3.6.0.min.js"></script>

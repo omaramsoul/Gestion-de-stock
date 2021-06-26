@@ -21,17 +21,19 @@
 }
 
 .discoverProducts {
-    background-color: #DEA85E;
+    background-color: white;
     padding: 10px 30px;
-    border: none;
+    border: 1px solid #e4ac5e;
     border-radius: 5px;
-    color: white;
+    color: #e4ac5e;
     font-size: 22px;
     margin-top: 40px;
 }
 
 .discoverProducts:hover {
-    background-color: #fd9502;
+    border-radius: 20px 0px 20px 0px;
+    color: white;
+    background-color: #e4ac5e;
 } 
 
 .firstSlogan {
