@@ -28,12 +28,14 @@
     color: #e4ac5e;
     font-size: 22px;
     margin-top: 40px;
+    transition: 0.3s;
 }
 
 .discoverProducts:hover {
     border-radius: 20px 0px 20px 0px;
     color: white;
     background-color: #e4ac5e;
+    transition: 0.3s;
 } 
 
 .firstSlogan {

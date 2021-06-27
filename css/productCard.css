@@ -16,6 +16,10 @@
     margin: 8px;
 }
 
+.productCard:hover {
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
 .productCard a {
     text-decoration: none;
     color: #cf6909;

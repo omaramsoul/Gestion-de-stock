@@ -9,9 +9,7 @@ body{
     font-family: 'Cairo', sans-serif;
 }
 
-.productContainer {
-    margin-top: 20px;
-    margin-bottom: 20px;
+.productCard {
 }
 
 .newProducts {
@@ -35,12 +33,6 @@ body{
 
 .row {
     justify-content: center;
-}
-
-.productImage {
-    background-color: #f8e7ce;
-    border-radius: 10px;
-    height: 200px;
 }
 
 .productName {

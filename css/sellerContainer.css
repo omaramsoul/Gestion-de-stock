@@ -27,17 +27,21 @@
 }
 
 .getStarted {
-    background-color: #DEA85E;
+    background-color: #F8F8F8;
     padding: 10px 50px;
-    border: none;
+    border: 1px solid #e4ac5e;
     border-radius: 5px;
-    color: white;
+    color: #e4ac5e;
     font-size: 22px;
     margin-top: 10px;
+    transition: 0.3s;
 }
 
 .getStarted:hover {
-    background-color: #fd9502;
+    color: white;
+    background-color: #e4ac5e;
+    transition: 0.3s;
+    border-radius: 20px 0px 20px 0px;
 } 
 
 @media screen and (max-width: 1200px) {

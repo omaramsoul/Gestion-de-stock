@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-size: 17px ;
+    font-family: 'Cairo', sans-serif;
+}
+
+.formContainer {
+    text-align: center;
+}
+
+.loginLogo {
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.inputArea, .inputNameArea {
+    padding: 5px;
+    padding-left: 20px;
+    margin: 2px 0px;
+    border-image-slice: 1;
+    border-color: #d47800;
+}
+
+.inputArea {
+    width: 420px;    
+}
+
+.inputNameArea {
+    width: 208px;
+}
+
+.passwordArea {
+    -webkit-text-security: circle;
+}
+
+select {
+    border: 2px solid #443e3e;
+}
+
+.signupbtn {
+    padding: 5px;
+    width: 420px;
+    margin: 10px 0px;
+    background-color: black;
+    color: white;
+    border-style: none;
+    transition: 0.5s;
+}
+
+.signupbtn:hover {
+    border-radius: 20px 0px;
+    transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+
+    .signupTemplate  {
+        width: 70%;
+    }
+
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #DEA85E; 
+    border-radius: 5px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #fd9502; 
+}
+
+@media (max-width: 576px) {
+
+    .signupTemplate  {
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    .inputArea, .signupbtn, .inputNameArea {
+        width: 270px;    
+    }
+}
+
+@media (max-width: 500px) {
+
+    .signupTemplate  {
+        width: 85%;
+        margin-top: 20px;
+    }
+
+    .inputArea, .signupbtn, .inputNameArea {
+        width: 270px;    
+    }
+    
+}

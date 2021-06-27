@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/sideBar.css">
     <link rel="stylesheet" href="css/manageOrders.css">
+    <link rel="stylesheet" href="css/mngProduct.css">
+    <link rel="stylesheet" href="css/account.css">
     <link rel="icon" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -66,60 +68,36 @@
         <div class="container">
             
             <div class="TitlesDiv">
-                <h4 class="tableTitle">Orders list </h4>
+                <h4 class="tableTitle">Account </h4>
             </div>
 
-            <div class="tableContainer">
-
-                <table>
-
-                    <thead>
-                        <tr>
-                            <th>Client</th>
-                            <th>Order ID</th>
-                            <th>Product</th>
-                            <th>Amount</th>
-                            <th>Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Omar AMSOUL</td>
-                            <td>#6461</td>
-                            <td>
-                                <img src="images/nike shoes.png" alt="Product image" class="productImage">
-                                <span class="productName">Nike shoes size 40</span>
-                            </td>
-                            <td class="amount">1500 Dhs</td>
-                            <td>26/07/2021</td>
-                        </tr>
-                        <tr>
-                            <td>Mouad MADOUN</td>
-                            <td>#6460</td>
-                            <td>
-                                <img src="images/adida_tshirt_men_-removebg-preview.png" alt="Product image" class="productImage">
-                                <span class="productName">Nike T-shirt size L</span>
-                            </td>
-                            <td class="amount">300 Dhs</td>
-                            <td>25/07/2021</td>
-                        </tr>
-                        <tr>
-                            <td>Lionel Messi</td>
-                            <td>#6459</td>
-                            <td>
-                                <img src="images/adidas_shoes-removebg-preview.png" alt="Product image" class="productImage">
-                                <span class="productName">Adidas shoes size 45</span>
-                            </td>
-                            <td class="amount">1200 Dhs</td>
-                            <td>25/07/2021</td>
-                        </tr>
-                    </tbody>
-    
-                </table>
-
+            <div class="formContainer">
+                <form action="index.html" class="signUpForm col-lg-10">
+                    <section class="signText">Update your account informations : </section>
+                    <input type="text" name="name" id="" placeholder="Fisrt name*" class="inputNameArea" required>
+                    <input type="text" placeholder="Family name*" class="inputNameArea" required><br/>
+                    <input type="text" name="email" id="" placeholder="Email*" class="inputArea" required><br/>
+                    <input type="password" name="pwd" id="pwd" placeholder="Password*" minlength="8" class="inputArea passwordArea" required><br/>
+                    <input type="password" name="confirmPassword" id="" placeholder="Confirm password*" class="inputArea passwordArea" required>
+                    <div class="selectDiv">
+                        <select name="" id="" class="inputArea" required>
+                            <option value="" selected disabled hidden>Sign up as a*</option>
+                            <option value="client">Client</option>
+                            <option value="seller">Seller</option>
+                        </select>
+                    </div>
+                    <input type="text" placeholder="GSM*" class="inputArea" required><br/>
+                    <input type="text" placeholder="Address*" class="inputArea" required><br/>
+                    <input type="text" placeholder="City*" class="inputArea" required><br/>
+                    <input type="submit" name="" id="" value="Sign up" class="signupbtn">
+                    <section>Already have an account ? <a href="login.html">Login</a></section>
+                </form>
             </div>
+            
 
         </div>
+
+        
             
         
     </main>

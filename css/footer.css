@@ -18,9 +18,13 @@ footer {
     justify-content: space-between;
 }
 
+.far {
+    padding-right: 10px;
+}
+
 .brandIcons {
     display: block;
-    text-align: center;
+    text-align: left;
 }
 
 .brandData {
