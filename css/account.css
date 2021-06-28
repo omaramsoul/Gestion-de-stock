@@ -13,8 +13,15 @@ body {
     font-family: 'Cairo', sans-serif;
 }
 
+.TitlesDiv {
+    padding-bottom: 5px;
+}
+
 .formContainer {
     text-align: center;
+    background: #fff2e5;
+    border-radius: 30px;
+    padding: 40px;
 }
 
 .loginLogo {
@@ -27,15 +34,17 @@ body {
     padding-left: 20px;
     margin: 2px 0px;
     border-image-slice: 1;
-    border-color: #d47800;
+    border-color: rgb(255, 153, 0);
 }
 
 .inputArea {
-    width: 420px;    
+    width: 420px; 
+    border-radius: 20px;   
 }
 
 .inputNameArea {
     width: 208px;
+    border-radius: 20px;   
 }
 
 .passwordArea {
@@ -46,20 +55,31 @@ select {
     border: 2px solid #443e3e;
 }
 
-.signupbtn {
+.signupbtn, .deleteAccount {
     padding: 5px;
     width: 420px;
     margin: 10px 0px;
-    background-color: black;
-    color: white;
-    border-style: none;
+    background-color: #fff2e5;
+    border: 2px solid white;
+    color: rgb(41, 40, 40);
     transition: 0.5s;
+    border-radius: 20px;
 }
 
 .signupbtn:hover {
-    border-radius: 20px 0px;
-    transition: 0.5s;
+    background-color: white;
+    color: #f7b069;
 }
+
+.deleteAccount:hover {
+    background-color: white;
+    color: red;
+}
+
+.signText {
+    padding-bottom: 20px;
+}
+
 
 @media (max-width: 768px) {
 

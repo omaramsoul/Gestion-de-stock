@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/statistics.css">
-    <link rel="icon" href="images/favicon.png">
-    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/sideBar.css">
+    <link rel="icon" href="images/stockinFavIcon.png">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <title>Document</title>
+    <title>Sign up</title>
 </head>
 <body>
 
@@ -45,43 +45,30 @@
                 <li class="nav-item"><a class="nav-link registration" href="#">Se déconnecter</a></li>         
               </ul>
               <div class="form-inline my-2 my-lg-0">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="location.href='#'"><span>Username </span> <span><i class="fas fa-user-circle"></i></span> </button>
+                <button class="btn btn-outline-success my-2 my-sm-0" onclick="accountPopUp()" ondblclick="hidePopup()" type="submit" onclick="location.href='#'"><span>Username </span> <span><i class="fas fa-user-circle"></i></span> </button>
               </div>
             </div>
           </nav>
     </header>
 
-    <main>
+    <main onclick="hidePopup()">
         
         <div class="container-flow theContainer">
-            <div class="navigation col-lg-2 col- col-md-3 col-sm-3">
-                <ul>
-                    <li class="barItem">
-                        <a href="#">
-                            <span class="icon"><i class="fas fa-user"></i></span>
-                            <span class="title User">Account</span>
-                        </a>  
-                    </li>
-                    <li class="barItem">
-                        <a href="statistics.html">
-                            <span class="icon"><i class="fas fa-chart-pie"></i></span>
-                            <span class="title Statistiques">Statistics</span>
-                        </a>
-                    </li>
-                    <li class="barItem"> 
-                        <a href="manageProducts.html">
-                            <span class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                            <span class="title Produits">Manage Products</span>
-                        </a>
-                    </li>
-                    <li class="barItem">
-                        <a href="#">
-                            <span class="icon"><i class="fas fa-truck"></i></span>
-                            <span class="title Commandes">Manage Orders</span>
-                        </a>
-                    </li>   
-                </ul>
+            
+            <div class="sideBar">
+            
+                <div class="profileImageSideBar">
+                    <img src="images/profile image.png" alt="My Image" class="profileImage">
+                    <h4 class="userName">Username</h4>
+                </div>
+                <a href="Account.html" class="SideBarItems "><i class="far fa-user-circle"></i> <span>Account</span></a>
+                <a href="statistics.html" class="SideBarItems "><i class="far fa-chart-bar"></i> <span>Dashboard</span></a>
+                <a href="MngProduct.html" class="SideBarItems "><i class="fas fa-tag"></i> <span>Manage Products</span></a>
+                <a href="manageOrders.html" class="SideBarItems "><i class="fas fa-shopping-cart"></i> <span>Manage Orders</span></a>
+                <a href="#" class="SideBarItems "><i class="fas fa-truck"></i> <span>Manage Deliveries</span></a>
+    
             </div>
+
             <div class="theContent col-lg-10 col-md-8 col-sm-9">
                 <div class="firstDiv col-lg-12">
                     <div class="ContentDivs ClientsDiv col-lg-5 ">
@@ -144,6 +131,32 @@
                     </div>
                 </div>
             </div>
+
+            <div class="userPopUp">
+
+                <div class="profileImageDiv">
+                    <img src="images/fff.jpg" alt="omar" class="profileImagePopUp">
+                    <span class="UserName">Hi, Omar</span>
+                    <hr class="HorizontalLine">
+                </div>
+                <div class="OptionsDiv OptionsDiv1">
+                    <a href="#" class="accountOptions"><i class="far fa-user-circle accountOptionsIcons"></i> Your account</a>
+                </div>
+                <div class="OptionsDiv">
+                    <a href="#" class="accountOptions"><i class="fas fa-shopping-bag accountOptionsIcons"></i> Your cart</a>
+                </div>
+                <div class="OptionsDiv">
+                    <a href="#" class="accountOptions"><i class="far fa-question-circle accountOptionsIcons"></i> Help</a>
+                </div>
+                <div class="OptionsDiv">
+                    <a href="#" class="accountOptions"><i class="far fa-comment-dots accountOptionsIcons"></i> Send feedback</a>
+                </div>
+                <div class="OptionsDiv">
+                    <a href="#" class="accountOptions"><i class="fas fa-sign-out-alt accountOptionsIcons"></i> Sign out</a>
+                </div>
+    
+            </div>
+
         </div>
         
           
@@ -155,12 +168,10 @@
         <div class="ContactUs">
             <div class="brandInfos">
                 <div class="brandIcons">
-                    <img src="images/call.png" class="callIcon"><br/>
-                    <img src="images/email.png" class="emailIcon">
-                </div>
-                <div class="brandData">
-                    <p class="brandNumber"> +212-623689100</p>
-                    <p class="brandEmail">  contact@stockin.com</p>
+                    <i class="far fa-phone-alt"></i>
+                    <span class="brandNumber">+212-623689100</span><br/>
+                    <i class="far fa-envelope"></i>
+                    <span class="brandEmail">contact@stockin.com</span>
                 </div>
             </div>
         </div>
@@ -172,7 +183,7 @@
     <script src="bootstrap/jquery-3.6.0.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
     <script src="bootstrap/script.js"></script>
-    <script src="script.js"></script>
+    <script src="statics.js"></script>
     
     
 </body>

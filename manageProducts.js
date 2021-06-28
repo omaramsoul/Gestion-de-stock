@@ -66,9 +66,9 @@ document.querySelector(".UpdateProductPopUp .closeBtn").addEventListener("click"
 })
 
 //The account pop up :
-document.querySelector("#accountPopUp").addEventListener("click", function(){
+function accountPopUp() {
     document.querySelector(".userPopUp").classList.add("active");
-})
+}
 function hidePopup() {
     document.querySelector('.userPopUp').classList.remove("active");
 }

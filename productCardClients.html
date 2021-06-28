@@ -30,26 +30,24 @@
                       Products
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" onclick="goToURL('Electronics')">Electronics</a>
-                        <a class="dropdown-item" onclick="goToURL('Computers')" href="products.html">Computers</a>
-                        <a class="dropdown-item" onclick="GoToMaison()" href="products.html">Men's Fashion</a>  
-                        <a class="dropdown-item" onclick="GoToMaison()" href="products.html">Women's Fashion</a>   
-                        <a class="dropdown-item" onclick="GoToMaison()" href="products.html">Health</a>              
+                        <a class="dropdown-item" onclick="GoToInformatique()" href="productCard.html">Informatique et Multimedia</a>
+                        <a class="dropdown-item" onclick="GoToHabillement()" href="productCard.html">Habillement et Bien Etre</a>
+                        <a class="dropdown-item" onclick="GoToMaison()" href="productCard.html">Maison et Jardin</a>                
                     </div>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
-                <li class="nav-item"><a class="nav-link registration" href="login.html">Login</a></li>
-                <li class="nav-item"><a class="nav-link registration" href="signup.html">Sign up</a></li>         
+                <li class="nav-item"><a class="nav-link registration" href="#">Compte</a></li>
+                <li class="nav-item"><a class="nav-link registration" href="#">Se déconnecter</a></li>         
               </ul>
               <div class="form-inline my-2 my-lg-0">
-                <a href="signup.html" class="signup">Sign up</a>
-                <button class="btn btn-outline-success my-2 my-sm-0 login" type="submit" onclick="location.href='login.html'">Login</button>
+                <i class="fas fa-shopping-bag"></i>
+                <button class="btn btn-outline-success my-2 my-sm-0" onclick="accountPopUp()"  ondblclick="hidePopup()" type="submit" onclick="location.href='#'"><span>Username </span> <span><i class="fas fa-user-circle"></i></span> </button>
               </div>
             </div>
           </nav>
     </header>
 
-    <main>
+    <main onclick="hidePopup()">
 
         <div class="container">
             
@@ -234,20 +232,47 @@
 
         </div>
 
+        <div class="userPopUp">
+
+            <div class="profileImageDiv">
+                <img src="images/profile image.png" alt="omar" class="profileImagePopUp">
+                <span class="UserName">Hi, username</span>
+                <hr class="HorizontalLine">
+            </div>
+            <div class="OptionsDiv OptionsDiv1">
+                <a href="#" class="accountOptions"><i class="far fa-user-circle accountOptionsIcons"></i> Your account</a>
+            </div>
+            <div class="OptionsDiv">
+                <a href="#" class="accountOptions"><i class="fas fa-shopping-bag accountOptionsIcons"></i> Your cart</a>
+            </div>
+            <div class="OptionsDiv">
+                <a href="#" class="accountOptions"><i class="far fa-question-circle accountOptionsIcons"></i> Help</a>
+            </div>
+            <div class="OptionsDiv">
+                <a href="#" class="accountOptions"><i class="far fa-comment-dots accountOptionsIcons"></i> Send feedback</a>
+            </div>
+            <div class="OptionsDiv">
+                <a href="#" class="accountOptions"><i class="fas fa-sign-out-alt accountOptionsIcons"></i> Sign out</a>
+            </div>
+    
+        </div>
+
         </div>
         
     </main>
 
-    <footer>
+    <footer class="shoppinCartFooter">
         <img src="images/logo.png" alt="" class="footerLogo">
         <div class="verticalLine"></div>
         <div class="ContactUs">
             <div class="brandInfos">
                 <div class="brandIcons">
-                    <i class="far fa-phone-alt"></i>
-                    <span class="brandNumber">+212-623689100</span><br/>
-                    <i class="far fa-envelope"></i>
-                    <span class="brandEmail">contact@stockin.com</span>
+                    <img src="images/call.png" class="callIcon"><br/>
+                    <img src="images/email.png" class="emailIcon">
+                </div>
+                <div class="brandData">
+                    <p class="brandNumber"> +212-623689100</p>
+                    <p class="brandEmail">  contact@stockin.com</p>
                 </div>
             </div>
         </div>
@@ -260,7 +285,7 @@
     <script src="bootstrap/bootstrap.min.js"></script>
     <script src="bootstrap/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="shoppingCart.js"></script>
+    <script src="productCardClient.js"></script>
     
     
 </body>
